@@ -68,7 +68,7 @@ export const NavbarStyled = styled.nav`
   
   .menu-icon {
     width: 3rem;
-    height: .35rem;
+    height: .3rem;
     background: #E2001A;
     border-radius: 15px;
     cursor: pointer;
@@ -87,12 +87,14 @@ export const NavbarStyled = styled.nav`
     
     &::before {
       top: -1rem;
+      left: .7rem;
       transform-origin: left top;
       transform: rotateZ(0deg);
     }
     
     &::after {
       top: 1rem;
+      left: .7rem;
       transform-origin: left bottom;
       transform: rotateZ(0deg);
     }
@@ -106,22 +108,15 @@ export const NavbarStyled = styled.nav`
     background: transparent;
   }
   
-  .menu-active::before, 
-  .menu-active::after {
-    background: white;
-  }
-  
   .menu-active::before {
     transform: rotateZ(43deg);
-    //width: 50%;
     background: #E2001A;
-    //top: 0;
   }
 
   .menu-active::after {
+    background: white;
     transform: rotateZ(-43deg);
     width: 50%;
-    //top: 0;
   }
   
   @media (max-width: 800px) {

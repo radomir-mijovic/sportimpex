@@ -52,8 +52,15 @@ export const HeaderButton = styled.button`
   background: transparent;
   padding: 1rem 2rem;
   cursor: pointer;
-  
-  :hover {
-    background: #E2001A;
+  outline: none;
+  width: 12rem;
+  transition: all .5s ease;
+
+  @media (hover: hover) {
+    :hover {
+      box-shadow: inset 12rem 0 0 0 #E2001A;
+      //color: #E2001A;
+      //border: 1px solid #FFFF;
+    }
   }
 `

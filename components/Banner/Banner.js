@@ -2,6 +2,7 @@ import React from 'react';
 import {BannerStyled} from "./BannerStyled";
 import Image from "next/image";
 import Header from "../Header/Header";
+import LeftRightIcons from "../LeftRightIcons/LeftRightIcons";
 
 const Banner = () => {
     return (
@@ -15,6 +16,7 @@ const Banner = () => {
                 quality='100'
                 alt='banner-img'/>
             <Header/>
+            <LeftRightIcons/>
         </BannerStyled>
     );
 };

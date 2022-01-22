@@ -20,7 +20,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     font-family: "oswald", sans-serif;
     font-weight: 300;
-
+    -webkit-tap-highlight-color: transparent;
   }
   
   ul {

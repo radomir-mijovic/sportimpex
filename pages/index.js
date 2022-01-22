@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Banner from "../components/Banner/Banner";
+import TraditionSection from "../components/TraditionSection/TraditionSection";
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
                 </title>
             </Head>
             <Banner/>
+            <TraditionSection/>
         </>
     )
 }
