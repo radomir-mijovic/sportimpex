@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 export const HeaderStyled = styled.header`
   height: auto;
-  width: 100%;
   display: flex;
   align-items: start;
   justify-content: space-around;
@@ -11,7 +10,7 @@ export const HeaderStyled = styled.header`
   z-index: 5;
   position: absolute;
   padding-left: 15%;
-  top: 35%;
+  top: clamp(40%, 30vw, 45%);
   
   .header__h2 {
     font-size: clamp(1.6rem, 4vw, 2rem);
@@ -22,7 +21,7 @@ export const HeaderStyled = styled.header`
   }
 
   .header__h1 {
-    font-size: clamp(4rem, 4vw, 8rem);
+    font-size: clamp(5rem, 4vw, 8rem);
     text-transform: uppercase;
     color: #FFFF;
     letter-spacing: 3px;
