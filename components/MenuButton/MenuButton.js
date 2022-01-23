@@ -1,9 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {MenuButtonStyled} from "./MenuButtonStyled";
 import {useStyleContext} from "../../context/style_context";
 
-const MenuButton = () => {
-    // const [isCloseIcon, setIsCloseIcon] = useState(false)
+const MenuButton = ({isScrollY}) => {
     const {setIsSidebar, isCloseIcon, setIsCloseIcon} = useStyleContext()
 
     function menuHandler() {
@@ -12,7 +11,9 @@ const MenuButton = () => {
     }
 
     return (
-        <MenuButtonStyled onClick={menuHandler}>
+        <MenuButtonStyled
+            isScrollY={isScrollY}
+            onClick={menuHandler}>
             <div className={isCloseIcon ? 'menu-icon menu-active' : 'menu-icon'}/>
         </MenuButtonStyled>
     );

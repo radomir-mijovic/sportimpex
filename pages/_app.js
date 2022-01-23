@@ -3,7 +3,6 @@ import Navbar from "../components/Navbar/Navbar";
 import {StyleProvider} from "../context/style_context";
 import {AnimatePresence} from "framer-motion";
 
-
 function MyApp({Component, pageProps}) {
     return (
         <AnimatePresence>

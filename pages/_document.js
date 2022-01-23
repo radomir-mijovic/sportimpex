@@ -1,4 +1,5 @@
 import {Main, Head, Html, NextScript} from "next/document";
+import Scroll from "../components/Scroll/Scroll";
 
 export default function Document() {
     return (
@@ -16,6 +17,7 @@ export default function Document() {
             </Head>
             <body>
             <Main/>
+            <Scroll/>
             <NextScript/>
             </body>
         </Html>

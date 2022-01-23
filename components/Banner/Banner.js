@@ -5,6 +5,7 @@ import Header from "../Header/Header";
 import LeftRightIcons from "../LeftRightIcons/LeftRightIcons";
 
 const Banner = () => {
+
     return (
         <BannerStyled>
             <div className="black-opacity"/>

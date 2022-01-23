@@ -1,4 +1,4 @@
-import React, {useContext, useState} from "react";
+import React, {useContext, useEffect, useState} from "react";
 
 const StyleContext = React.createContext()
 
@@ -6,6 +6,7 @@ export const StyleProvider = ({children}) => {
     const [isSidebar, setIsSidebar] = useState(false)
     const [isActive, setIsActive] = useState(0)
     const [isCloseIcon, setIsCloseIcon] = useState(false)
+
 
     return (
         <StyleContext.Provider value={{
