@@ -8,7 +8,9 @@ const LeftRightIcons = () => {
         <LeftRightIconsStyled>
             <motion.div
                 whileTap={{scale: .9}}
-                transition={{duration: .1}}
+                initial={{opacity: 0}}
+                animate={{opacity: 1}}
+                transition={{duration: .4}}
                 className="left-icon">
                 <Image
                     width='20'
@@ -17,7 +19,10 @@ const LeftRightIcons = () => {
                     alt="icon left"/>
             </motion.div>
             <motion.div
+                initial={{opacity: 0}}
+                animate={{opacity: 1}}
                 whileTap={{scale: .9}}
+                ransition={{duration: .4}}
                 className="right-icon">
                 <Image
                     width='20'

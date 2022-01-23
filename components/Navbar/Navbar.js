@@ -11,25 +11,38 @@ import {useStyleContext} from "../../context/style_context";
 const Navbar = () => {
     const {isSidebar, isActive, setIsActive} = useStyleContext()
     const [isScrollY, setIsScrollY] = useState(false)
+    const [isWidthMobile, setIsWidthMobile] = useState(false)
 
     useEffect(() => {
+
+        if (window.innerWidth < 801) {
+            setIsWidthMobile(true)
+        } else {
+            setIsWidthMobile(false)
+        }
+
         function onScroll() {
             if (document.body.scrollTop > 250) {
                 setIsScrollY(true)
             } else {
                 setIsScrollY(false)
             }
+            if (document.body.clientWidth < 801) {
+                setIsWidthMobile(true)
+            }
         }
 
         document.body.addEventListener("scroll", onScroll);
         return () => document.body.removeEventListener("scroll", onScroll);
-    });
+    }, []);
+
+
     return (
         <>
             <NavbarStyled isScrollY={isScrollY}>
                 <Image src='/sportimpex_logo.svg'
-                       height={'100'}
-                       width={'170'}
+                       height={isWidthMobile ? '80' : '100'}
+                       width={isWidthMobile ? '130' : '170'}
                        objectFit='fill'
                        alt='logo'/>
                 <ul className='links'>
