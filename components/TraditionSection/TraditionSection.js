@@ -2,7 +2,6 @@ import React from 'react';
 import {TraditionSectionStyled} from "./TraditionSectionStyled";
 import {MainH1, MainH2} from "../../styles/GlobalStyles";
 import Image from "next/image";
-import {motion} from "framer-motion";
 
 const TraditionSection = () => {
     return (

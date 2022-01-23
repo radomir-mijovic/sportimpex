@@ -22,7 +22,6 @@ export const LeftRightIconsStyled = styled.div`
     padding: 1rem;
     display: flex;
     align-items: center;
-    transition: all .3s;
 
     @media (hover: hover) {
       :hover {

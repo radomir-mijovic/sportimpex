@@ -14,6 +14,9 @@ const Navbar = () => {
     const [isWidthMobile, setIsWidthMobile] = useState(false)
 
     useEffect(() => {
+        if (document.body.scrollTop > 250) {
+            setIsScrollY(true)
+        }
 
         if (window.innerWidth < 801) {
             setIsWidthMobile(true)
@@ -41,8 +44,8 @@ const Navbar = () => {
         <>
             <NavbarStyled isScrollY={isScrollY}>
                 <Image src='/sportimpex_logo.svg'
-                       height={isWidthMobile ? '80' : '100'}
-                       width={isWidthMobile ? '130' : '170'}
+                       height={isWidthMobile ? '60' : '100'}
+                       width={isWidthMobile ? '100' : '170'}
                        objectFit='fill'
                        alt='logo'/>
                 <ul className='links'>

@@ -43,7 +43,7 @@ export const GlobalStyles = createGlobalStyle`
 export const MainH1 = styled.h1`
   color: #1b1b1b;
   text-transform: uppercase;
-  font-size: 5rem;
+  font-size: clamp(3.5rem, 4vw, 5rem);
   font-weight: 500;
   letter-spacing: 3px;
   line-height: 1.25em;

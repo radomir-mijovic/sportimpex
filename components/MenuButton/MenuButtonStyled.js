@@ -11,8 +11,7 @@ export const MenuButtonStyled = styled.div`
   position: absolute;
   z-index: 20;
   right: 7%;
-  top: ${props => props.isScrollY ? '3%' : '5%'};
-  transition: top .4s ease-in-out;
+  top: 3.5%;
   
   .menu-icon {
     width: 3rem;

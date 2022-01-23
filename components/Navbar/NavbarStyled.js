@@ -3,14 +3,14 @@ import styled from "styled-components";
 export const NavbarStyled = styled.nav`
   position: fixed;
   width: 100%;
-  height: ${props => props.isScrollY ? '7rem' : '9rem'};
+  height: 9rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
   z-index: 10;
   padding: 0 15%;
-  background: ${props => props.isScrollY ? 'black' : 'transparent'};
-  transition: all .4s ease-in-out;
+  background: ${props => props.isScrollY ? '#1b1b1b' : 'transparent'};
+  transition: background-color .4s ease-in-out;
 
   .links {
     display: flex;
@@ -27,7 +27,6 @@ export const NavbarStyled = styled.nav`
       border-bottom: 1px solid transparent;
       cursor: pointer;
       position: relative;
-      transition: all .3s ease-in-out;
 
       :hover::after {
         content: '';

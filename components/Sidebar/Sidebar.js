@@ -35,7 +35,7 @@ const Sidebar = () => {
                                 index={index}
                                 onClick={() => menuHandler(index)}>
                                 {/*<Image src='/icons/gallery-icon2.gif' alt='gallery' width='50' height='50'/>*/}
-                                0{index} {item.title} <hr/>
+                               {item.title}
                             </LinkH2>
                     )
                 })}
