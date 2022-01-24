@@ -11,17 +11,51 @@ export const PortfolioStyled = styled.section`
   min-height: 130rem;
   margin-top: 2.4rem;
 
-
   .card {
     width: 100%;
     height: auto;
     box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
     position: relative;
-    transition: all .4s;
 
-    :hover {
-      box-shadow: #E2001A 0 1px 10px, rgba(0, 0, 0, 0.22) 0 7px 7px;      //transform: scale(1.02);
+
+    //:hover {
+    //  box-shadow: #E2001A 0 1px 10px, rgba(0, 0, 0, 0.22) 0 7px 7px;      //transform: scale(1.02);
+    //}
+  }
+
+  .red-line {
+    background: rgba(255, 0, 0, .7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all .7s;
+    //animation: from-top;
+    //animation-duration: 1s;
+  }
+
+  .card-h1 {
+    position: absolute;
+    color: #FFFF;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-size: 2.5rem;
+
+    ::after {
+      content: "";
+      height: 1.5px;
+      background: #FFFF;
+      animation: grow-width;
+      animation-duration: 1.4s;
     }
+  }
+  
+  .hidden {
+    display: none;
   }
 
   .card-1 {
@@ -39,7 +73,7 @@ export const PortfolioStyled = styled.section`
   .card-4 {
     grid-column: 1 / 5;
   }
-  
+
   .card-5 {
     grid-row: 4 / 5;
     grid-column: 1 / 3;
@@ -48,17 +82,18 @@ export const PortfolioStyled = styled.section`
   .card-6 {
     grid-column: 3 / 5;
   }
+
   .card-7 {
     grid-column: 5 / -1;
-    grid-row:  3 / -1;
+    grid-row: 3 / -1;
   }
 
   @media (max-width: 800px) {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 1fr);
     min-height: 190rem;
-    
-    .card-1, 
+
+    .card-1,
     .card-2,
     .card-3,
     .card-4,
@@ -66,11 +101,29 @@ export const PortfolioStyled = styled.section`
     .card-6 {
       grid-column: 1 / 2;
     }
-    
+
     .card-7 {
       grid-column: 1 / 2;
       grid-row: span 3;
     }
   }
-
+  
+  @keyframes from-top {
+    from {
+      align-items: start;
+    }
+    to {
+      align-items: center;
+    }
+  }
+  
+  @keyframes grow-width {
+    from {
+      width: 5%;
+    }
+    to {
+      width: 100%;
+    }
+    
+  }
 `

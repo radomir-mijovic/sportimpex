@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SidebarStyled = styled.div`
   width: 100vw;
   height: 100vh;
-  background: rgba(0, 0, 0, .8);
+  background: rgba(0, 0, 0, .9);
   //background: #E2001A;
   position: absolute;
   z-index: 7;
