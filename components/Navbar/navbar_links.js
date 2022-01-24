@@ -7,5 +7,8 @@ export const navbar_links = [
     },
     {
         title: 'Galerija'
+    },
+    {
+        title: 'Katalog'
     }
 ]

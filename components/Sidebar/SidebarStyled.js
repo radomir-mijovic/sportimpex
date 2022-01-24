@@ -18,7 +18,7 @@ export const SidebarStyled = styled.div`
 `
 
 export const LinkH2 = styled.h2`
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin-bottom: 3rem;
   color: ${props => props.isActive === props.index ? '#E2001A' : '#FFF'};
   

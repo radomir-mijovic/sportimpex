@@ -56,5 +56,6 @@ export const MainH2 = styled.h2`
   font-weight: 300;
   letter-spacing: 3px;
   margin-top: 3rem;
+  margin-bottom: 1.5rem;
 `
 
