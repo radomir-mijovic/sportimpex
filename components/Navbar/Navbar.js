@@ -6,12 +6,14 @@ import {navbar_links} from "./navbar_links";
 import MenuButton from "../MenuButton/MenuButton";
 import Sidebar from "../Sidebar/Sidebar";
 import {useStyleContext} from "../../context/style_context";
+import {AnimatePresence} from "framer-motion";
 
 
 const Navbar = () => {
     const {isSidebar, isActive, setIsActive} = useStyleContext()
     const [isScrollY, setIsScrollY] = useState(false)
     const [isWidthMobile, setIsWidthMobile] = useState(false)
+
 
     useEffect(() => {
         if (document.body.scrollTop > 250) {
@@ -64,7 +66,9 @@ const Navbar = () => {
                 </ul>
             </NavbarStyled>
             <MenuButton isScrollY={isScrollY}/>
-            {isSidebar && <Sidebar/>}
+            <AnimatePresence>
+                {isSidebar && <Sidebar/>}
+            </AnimatePresence>
         </>
     );
 };

@@ -36,6 +36,8 @@ export const NavbarStyled = styled.nav`
         border-bottom: 2px solid #E2001A;
         bottom: -.5rem;
         margin: inherit;
+        animation: grow-width;
+        animation-duration: .7s;
       }
     }
 
@@ -61,6 +63,15 @@ export const NavbarStyled = styled.nav`
     
     .links {
       display: none;
+    }
+  }
+
+  @keyframes grow-width {
+    from {
+      width: 5%;
+    }
+    to {
+      width: 100%;
     }
   }
 

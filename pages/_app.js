@@ -5,13 +5,13 @@ import {AnimatePresence} from "framer-motion";
 
 function MyApp({Component, pageProps}) {
     return (
-        <AnimatePresence>
+        // <AnimatePresence>
             <StyleProvider>
                 <GlobalStyles/>
                 <Navbar/>
                 <Component {...pageProps} />
             </StyleProvider>
-        </AnimatePresence>
+        // </AnimatePresence>
     )
 
 }

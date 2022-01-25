@@ -15,7 +15,7 @@ const Portfolio = () => {
                     porfolio
                 </MainH2>
                 <MainH1>
-                    po čemu smo poznati
+                    po čemu smo <br/> poznati
                 </MainH1>
             </div>
             <PortfolioStyled>
@@ -25,20 +25,20 @@ const Portfolio = () => {
                     whileInView={{opacity: 1, transition: {duration: 1}}}
                     onHoverStart={() => setIsId(1)}
                     onHoverEnd={() => setIsId(null)}
-                    viewport={{ once: true }}
+                    viewport={{once: true}}
                     className="card card-1">
                     <Image
                         layout='fill'
                         objectFit='cover'
                         src='/images/school-furniture.jpg'
                         alt='school furniture'/>
-                    <div className={isId === 1 ? 'red-line' : undefined}>
+                    <div className={isId === 1 ? 'red-overlay' : 'hidden'}>
                         <motion.div
                             whileHover={{scale: 1.1}}
                             whileTap={{scale: .95}}
                             transition={{duration: .3}}
-                            className={isId === 1 ? 'card-h1' : undefined}>
-                            skolski namestaj .01
+                            className={isId === 1 ? 'card-h1' : 'hidden'}>
+                            Školski nameŠtaj .01
                         </motion.div>
                     </div>
                 </motion.div>
@@ -48,7 +48,7 @@ const Portfolio = () => {
                     whileInView={{opacity: 1, x: 0, transition: {duration: 1}}}
                     onHoverStart={() => setIsId(2)}
                     onHoverEnd={() => setIsId(null)}
-                    viewport={{ once: true }}
+                    viewport={{once: true}}
                     className="card card-2">
                     <Image
                         layout='fill'
@@ -56,13 +56,13 @@ const Portfolio = () => {
                         quality='100'
                         src='/images/preschool-furniture.jpg'
                         alt='preschool furniture'/>
-                    <div className={isId === 2 ? 'red-line' : 'hidden'}>
+                    <div className={isId === 2 ? 'red-overlay' : 'hidden'}>
                         <motion.div
                             whileHover={{scale: 1.1}}
                             whileTap={{scale: .95}}
                             transition={{duration: .3}}
                             className={isId === 2 ? 'card-h1' : 'hidden'}>
-                            predskolski namestaj .02
+                            predŠkolski nameŠtaj .02
                         </motion.div>
                     </div>
                 </motion.div>
@@ -72,7 +72,7 @@ const Portfolio = () => {
                     whileInView={{opacity: 1, x: 0, transition: {duration: 1}}}
                     onHoverStart={() => setIsId(3)}
                     onHoverEnd={() => setIsId(null)}
-                    viewport={{ once: true }}
+                    viewport={{once: true}}
                     className="card card-3">
                     <Image
                         layout='fill'
@@ -80,8 +80,15 @@ const Portfolio = () => {
                         quality='100'
                         src='/images/office-furniture.jpg'
                         alt='office furniture'/>
-                    <div className=""/>
-                    <div className={isId === 3 ? 'red-line' : undefined}/>
+                    <div className={isId === 3 ? 'red-overlay' : 'hidden'}>
+                        <motion.div
+                            whileHover={{scale: 1.1}}
+                            whileTap={{scale: .95}}
+                            transition={{duration: .3}}
+                            className={isId === 3 ? 'card-h1' : 'hidden'}>
+                            kancelarije i zbornice .03
+                        </motion.div>
+                    </div>
                 </motion.div>
                 <motion.div
                     layoutId={4}
@@ -89,7 +96,7 @@ const Portfolio = () => {
                     whileInView={{x: 0, opacity: 1, transition: {duration: 1}}}
                     onHoverStart={() => setIsId(4)}
                     onHoverEnd={() => setIsId(null)}
-                    viewport={{ once: true }}
+                    viewport={{once: true}}
                     className="card card-4">
                     <Image
                         layout='fill'
@@ -97,7 +104,15 @@ const Portfolio = () => {
                         quality='100'
                         src='/images/chemistry-classroom.jpg'
                         alt='chemistry furniture'/>
-                    <div className={isId === 4 ? 'red-line' : undefined}/>
+                    <div className={isId === 4 ? 'red-overlay' : 'hidden'}>
+                        <motion.div
+                            whileHover={{scale: 1.1}}
+                            whileTap={{scale: .95}}
+                            transition={{duration: .3}}
+                            className={isId === 4 ? 'card-h1' : 'hidden'}>
+                            Kabineti za fiziku i hemiju .04
+                        </motion.div>
+                    </div>
                 </motion.div>
                 <motion.div
                     layoutId={5}
@@ -105,7 +120,7 @@ const Portfolio = () => {
                     whileInView={{x: 0, opacity: 1, transition: {duration: 1}}}
                     onHoverStart={() => setIsId(5)}
                     onHoverEnd={() => setIsId(null)}
-                    viewport={{ once: true }}
+                    viewport={{once: true}}
                     className="card card-5">
                     <Image
                         layout='fill'
@@ -113,7 +128,15 @@ const Portfolio = () => {
                         quality='100'
                         src='/images/garden-furniture.jpg'
                         alt='garden furniture'/>
-                    <div className={isId === 5 ? 'red-line' : undefined}/>
+                    <div className={isId === 5 ? 'red-overlay' : 'hidden'}>
+                        <motion.div
+                            whileHover={{scale: 1.1}}
+                            whileTap={{scale: .95}}
+                            transition={{duration: .3}}
+                            className={isId === 5 ? 'card-h1' : 'hidden'}>
+                            dvoriŠni mobilijar .05
+                        </motion.div>
+                    </div>
                 </motion.div>
                 <motion.div
                     layoutId={6}
@@ -121,7 +144,7 @@ const Portfolio = () => {
                     whileInView={{opacity: 1, y: 0, transition: {duration: 1}}}
                     onHoverStart={() => setIsId(6)}
                     onHoverEnd={() => setIsId(null)}
-                    viewport={{ once: true }}
+                    viewport={{once: true}}
                     className="card card-6">
                     <Image
                         layout='fill'
@@ -129,7 +152,15 @@ const Portfolio = () => {
                         quality='100'
                         src='/images/sport-furniture.jpg'
                         alt='sport furniture'/>
-                    <div className={isId === 6 ? 'red-line' : undefined}/>
+                    <div className={isId === 6 ? 'red-overlay' : 'hidden'}>
+                        <motion.div
+                            whileHover={{scale: 1.1}}
+                            whileTap={{scale: .95}}
+                            transition={{duration: .3}}
+                            className={isId === 6 ? 'card-h1' : 'hidden'}>
+                            Sportska oprema <br/> i rekviziti .06
+                        </motion.div>
+                    </div>
                 </motion.div>
                 <motion.div
                     layoutId={7}
@@ -137,7 +168,7 @@ const Portfolio = () => {
                     whileInView={{opacity: 1, x: 0, transition: {duration: 1}}}
                     onHoverStart={() => setIsId(7)}
                     onHoverEnd={() => setIsId(null)}
-                    viewport={{ once: true }}
+                    viewport={{once: true}}
                     className="card card-7">
                     <Image
                         layout='fill'
@@ -145,7 +176,15 @@ const Portfolio = () => {
                         quality='100'
                         src='/images/kids-playground1.jpg'
                         alt='chemistry furniture'/>
-                    <div className={isId === 7 ? 'red-line' : undefined}/>
+                    <div className={isId === 7 ? 'red-overlay' : 'hidden'}>
+                        <motion.div
+                            whileHover={{scale: 1.1}}
+                            whileTap={{scale: .95}}
+                            transition={{duration: .3}}
+                            className={isId === 7 ? 'card-h1' : 'hidden'}>
+                            Dečija igrališta .07
+                        </motion.div>
+                    </div>
                 </motion.div>
             </PortfolioStyled>
         </SectionContainerStyled>

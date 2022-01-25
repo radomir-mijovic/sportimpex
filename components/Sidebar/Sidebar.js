@@ -1,6 +1,6 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {LinkH2, SidebarStyled} from "./SidebarStyled";
-import {AnimatePresence, motion} from "framer-motion";
+import {AnimatePresence, motion, useAnimation} from "framer-motion";
 import {navbar_links} from "../Navbar/navbar_links";
 import {useStyleContext} from "../../context/style_context";
 import Image from "next/image";
@@ -19,28 +19,46 @@ const Sidebar = () => {
         setIsCloseIcon(prev => !prev)
     }
 
+    const variants = {
+        visible: i => ({
+            opacity: 1,
+            y: 0,
+            transition: {
+                delay: i * .3,
+                type: "spring",
+                stiffness: 40
+            }
+        }),
+        hidden: {
+            opacity: 0,
+            y: '-20%'
+        },
+    }
+
     return (
-        <AnimatePresence>
-            <SidebarStyled
-                initial={{x: '-100%', opacity: 0}}
-                animate={{x: 0, opacity: 1}}
-                transition={{duration: .5}}
-                exit={{x: '100%', opacity: 0}}
-                as={motion.div}>
-                {navbar_links.map((item, index) => {
-                    return (
-                            <LinkH2
-                                key={index}
-                                isActive={isActive}
-                                index={index}
-                                onClick={() => menuHandler(index)}>
-                                {/*<Image src='/icons/gallery-icon2.gif' alt='gallery' width='50' height='50'/>*/}
-                               {item.title}
-                            </LinkH2>
-                    )
-                })}
-            </SidebarStyled>
-        </AnimatePresence>
+        <SidebarStyled
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            exit={{opacity: 0, x: '-100%'}}
+            transition={{duration: .5}}>
+            {navbar_links.map((item, i) => {
+                return (
+                    <motion.li
+                        key={i}
+                        custom={i}
+                        animate="visible"
+                        variants={variants}
+                        initial="hidden">
+                        <LinkH2
+                            isActive={isActive}
+                            index={i}
+                            onClick={() => menuHandler(i)}>
+                            {item.title}
+                        </LinkH2>
+                    </motion.li>
+                )
+            })}
+        </SidebarStyled>
     );
 };
 

@@ -16,34 +16,43 @@ export const PortfolioStyled = styled.section`
     height: auto;
     box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
     position: relative;
-
-
-    //:hover {
-    //  box-shadow: #E2001A 0 1px 10px, rgba(0, 0, 0, 0.22) 0 7px 7px;      //transform: scale(1.02);
-    //}
   }
 
-  .red-line {
-    background: rgba(255, 0, 0, .7);
+  .red-overlay {
+    background: linear-gradient(to left, #E2001A 50%, salmon 50%) right;
+    background-size: 200%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     height: 100%;
     position: absolute;
-    transition: all .7s;
-    //animation: from-top;
-    //animation-duration: 1s;
+    transition: all 1s;
+    opacity: 1;
+  }
+
+  .hidden {
+    opacity: 0;
   }
 
   .card-h1 {
-    position: absolute;
     color: #FFFF;
     text-transform: uppercase;
     cursor: pointer;
     display: flex;
     flex-direction: column;
-    font-size: 2.5rem;
+    font-size: clamp(1.6rem, 2vw, 2.5rem);
+
+    //::before {
+    //  content: "";
+    //  height: 1.5px;
+    //  background: #E2001A;
+    //  transition: all 1s;
+    //  width: revert;
+    //  animation: grow-width-from-right;
+    //  animation-duration: 1.4s;
+    //}
 
     ::after {
       content: "";
@@ -54,9 +63,6 @@ export const PortfolioStyled = styled.section`
     }
   }
   
-  .hidden {
-    display: none;
-  }
 
   .card-1 {
     grid-column: 1 / -1;
@@ -107,7 +113,7 @@ export const PortfolioStyled = styled.section`
       grid-row: span 3;
     }
   }
-  
+
   @keyframes from-top {
     from {
       align-items: start;
@@ -116,7 +122,7 @@ export const PortfolioStyled = styled.section`
       align-items: center;
     }
   }
-  
+
   @keyframes grow-width {
     from {
       width: 5%;
@@ -124,6 +130,14 @@ export const PortfolioStyled = styled.section`
     to {
       width: 100%;
     }
-    
+  }
+
+  @keyframes grow-width-from-right {
+    from {
+      right: 5%;
+    }
+    to {
+      background: linear-gradient(to left, #FFFF 50%, salmon 50%) right;
+    }
   }
 `
