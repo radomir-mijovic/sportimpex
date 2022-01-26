@@ -5,6 +5,7 @@ import Header from "../Header/Header";
 import LeftRightIcons from "../LeftRightIcons/LeftRightIcons";
 import {bannerImages} from "./banner_images";
 import {AnimatePresence, motion, useAnimation} from "framer-motion";
+import BannerImage from "./BannerImage";
 
 const Banner = () => {
     const [isImage, setIsImage] = useState(0)
@@ -36,33 +37,20 @@ const Banner = () => {
     return (
         <BannerStyled>
             <div className="black-opacity"/>
-            <AnimatePresence exitBeforeEnter initial={false}>
+
                 {bannerImages.map((image, index) => {
                     return (
-                        <Fragment key={index}>
-                            {isImage === image.id &&
-                            <motion.div
-                                // custom={image.id}
-                                // animate={controls}
-                                initial={{x: 300, opacity: 0}}
-                                animate={{x: 0, opacity: 1}}
-                                transition={{duration: .7, delay: .3}}
-                                exit={{x: 300, opacity: 0}}
-                                className='image-wrapper'>
-                                <Image
-                                    className='banner-img'
-                                    src={image.url}
-                                    layout='fill'
-                                    objectFit='cover'
-                                    quality='100'
-                                    alt='banner-img'/>
-                                <Header image{...image}/>
-                            </motion.div>
-                            }
-                        </Fragment>
+                            <AnimatePresence  key={index}>
+                                {isImage === image.id &&
+                                <>
+                                    <BannerImage image={image}/>
+                                    <Header image={image}/>
+                                </>
+                                }
+                            </AnimatePresence>
                     )
                 })}
-            </AnimatePresence>
+
             <LeftRightIcons setIsImage={setIsImage}/>
         </BannerStyled>
     );
