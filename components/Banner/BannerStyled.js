@@ -13,6 +13,7 @@ export const BannerStyled = styled.main`
     height: 100%;
     width: 100%;
     z-index: 2;
+    pointer-events: none;
   }
    
   .banner-img {

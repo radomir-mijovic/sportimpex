@@ -1,9 +1,8 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {HeaderButton, HeaderStyled} from "./HeaderStyled";
 import {motion} from "framer-motion";
 
 const Header = ({image}) => {
-    const [isActiveButton, setIsActiveButton] = useState(false)
 
     return (
         <HeaderStyled strokeColor={image.strokeColor}>
@@ -30,8 +29,6 @@ const Header = ({image}) => {
                 {image.bannerTextMain} <br/> <span className='header__h1-empty'>{image.bannerText}</span>
             </motion.h1>
             <HeaderButton
-                // isActiveButton={isActiveButton}
-                // onMouseEnter={() => setIsActiveButton(true)}
                 whileHover={{scale: 1.05, transition: {
                     duration: .2
                     }}}

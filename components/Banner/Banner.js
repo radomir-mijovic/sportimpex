@@ -1,57 +1,43 @@
-import React, {Fragment, useEffect, useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import {BannerStyled} from "./BannerStyled";
-import Image from "next/image";
 import Header from "../Header/Header";
 import LeftRightIcons from "../LeftRightIcons/LeftRightIcons";
 import {bannerImages} from "./banner_images";
-import {AnimatePresence, motion, useAnimation} from "framer-motion";
+import {AnimatePresence} from "framer-motion";
 import BannerImage from "./BannerImage";
+import {wrap} from "@popmotion/popcorn";
 
 const Banner = () => {
-    const [isImage, setIsImage] = useState(0)
-    const controls = useAnimation()
+    const [isImageIndex, setIsImageIndex] = useState(0)
 
-    if (bannerImages.length === isImage) {
-        setIsImage(0)
-    }
-    if (isImage < 0) {
-        setIsImage(bannerImages.length - 1)
-    }
+    const imageIndex = wrap(0, bannerImages.length, isImageIndex)
 
-    // useEffect(() => {
-    //     controls.start(image => ({
-    //         x: '100%',
-    //         transition: {
-    //             delay: image * 1
-    //         }
-    //     }))
-    // }, [])
-
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         setIsImage(prevState => prevState + 1)
-    //     }, 5000)
-    //     return () => clearInterval(interval)
-    // })
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setIsImageIndex(prevState => prevState + 1)
+        }, 10000)
+        return () => clearInterval(interval)
+    })
 
     return (
         <BannerStyled>
             <div className="black-opacity"/>
-
-                {bannerImages.map((image, index) => {
-                    return (
-                            <AnimatePresence  key={index}>
-                                {isImage === image.id &&
-                                <>
-                                    <BannerImage image={image}/>
-                                    <Header image={image}/>
-                                </>
-                                }
-                            </AnimatePresence>
-                    )
-                })}
-
-            <LeftRightIcons setIsImage={setIsImage}/>
+            {bannerImages.map((image, index) => {
+                return (
+                    <AnimatePresence exitBeforeEnter key={index}>
+                        {imageIndex === image.id &&
+                        <>
+                            <BannerImage
+                                key={index}
+                                setIsImageIndex={setIsImageIndex}
+                                image={image}/>
+                            <Header image={image}/>
+                        </>
+                        }
+                    </AnimatePresence>
+                )
+            })}
+            <LeftRightIcons setIsImageIndex={setIsImageIndex}/>
         </BannerStyled>
     );
 };

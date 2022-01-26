@@ -3,12 +3,12 @@ import {LeftRightIconsStyled} from "./LeftRightIconsStyled";
 import Image from "next/image";
 import {motion} from "framer-motion";
 
-const LeftRightIcons = ({setIsImage}) => {
+const LeftRightIcons = ({setIsImageIndex}) => {
 
     return (
         <LeftRightIconsStyled>
             <motion.div
-                onClick={() => setIsImage(prevState => prevState -1)}
+                onClick={() => setIsImageIndex(prevState => prevState - 1)}
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}
                 transition={{duration: 1}}
@@ -20,7 +20,7 @@ const LeftRightIcons = ({setIsImage}) => {
                     alt="icon left"/>
             </motion.div>
             <motion.div
-                onClick={() => setIsImage(prevState => prevState +1)}
+                onClick={() => setIsImageIndex(prevState => prevState + 1)}
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}
                 ransition={{duration: 1}}
