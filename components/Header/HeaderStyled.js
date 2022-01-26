@@ -21,7 +21,7 @@ export const HeaderStyled = styled.header`
   }
 
   .header__h1 {
-    font-size: clamp(5rem, 4vw, 8rem);
+    font-size: clamp(4.2rem, 4vw, 8rem);
     text-transform: uppercase;
     color: #FFFF;
     letter-spacing: 3px;
@@ -34,7 +34,7 @@ export const HeaderStyled = styled.header`
   .header__h1-empty {
     color: transparent;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FFF;
+    -webkit-text-stroke-color: ${props => props.strokeColor};
   }
   
   @media (max-width: 800px) {

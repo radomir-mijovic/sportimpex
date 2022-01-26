@@ -10,7 +10,7 @@ export const LeftRightIconsStyled = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  z-index: 3;
+  z-index: 5;
   
   .right-icon,
   .left-icon {

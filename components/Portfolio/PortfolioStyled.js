@@ -19,7 +19,7 @@ export const PortfolioStyled = styled.section`
   }
 
   .red-overlay {
-    background: linear-gradient(to left, #E2001A 50%, salmon 50%) right;
+    background: linear-gradient(to left, #E2001A 50%, #de402c 50%) right;
     background-size: 200%;
     display: flex;
     justify-content: center;
@@ -62,7 +62,7 @@ export const PortfolioStyled = styled.section`
       animation-duration: 1.4s;
     }
   }
-  
+
 
   .card-1 {
     grid-column: 1 / -1;

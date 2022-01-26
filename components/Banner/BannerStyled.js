@@ -18,4 +18,11 @@ export const BannerStyled = styled.main`
   .banner-img {
     z-index: -1;
   }
+  
+  .image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+  
 `

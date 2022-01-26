@@ -19,7 +19,7 @@ export const SidebarStyled = styled(motion.div)`
 
 export const LinkH2 = styled.h2`
   font-size: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   color: ${props => props.isActive === props.index ? '#E2001A' : '#FFF'};
   display: flex;
   flex-direction: column;

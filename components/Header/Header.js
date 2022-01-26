@@ -2,9 +2,10 @@ import React from 'react';
 import {HeaderButton, HeaderStyled} from "./HeaderStyled";
 import {motion} from "framer-motion";
 
-const Header = () => {
+const Header = ({...image}) => {
+
     return (
-        <HeaderStyled>
+        <HeaderStyled strokeColor={image.strokeColor}>
             <motion.h2
                 initial={{opacity: 0, x: '-50%'}}
                 animate={{opacity: 1, x: 0}}
@@ -17,7 +18,7 @@ const Header = () => {
                 animate={{opacity: 1, y: 0}}
                 transition={{duration: 1}}
                 className='header__h1'>
-                mi gradimo <br/> <span className='header__h1-empty'>poverenje</span>
+                {image.bannerTextMain} <br/> <span className='header__h1-empty'>{image.bannerText}</span>
             </motion.h1>
             <HeaderButton
                 initial={{opacity: 0}}
