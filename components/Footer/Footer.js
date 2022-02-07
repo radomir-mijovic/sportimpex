@@ -17,6 +17,7 @@ const Footer = () => {
                 <Image
                     height={70}
                     width={90}
+                    alt='logo'
                     src='/sportimpex_logo.svg'/>
             </div>
             <div className="contact">
