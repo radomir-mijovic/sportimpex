@@ -1,5 +1,5 @@
 import React from 'react';
-import {ContactButton, FooterStyled} from "./FooterStyled";
+import {FooterStyled} from "./FooterStyled";
 import Image from "next/image";
 import {FiTwitter, FiInstagram, FiFacebook} from "react-icons/fi";
 import {AiOutlineMail, AiOutlinePhone} from "react-icons/ai";
