@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {FooterStyled} from "./FooterStyled";
 import Image from "next/image";
 import {FiTwitter, FiInstagram, FiFacebook} from "react-icons/fi";
@@ -6,19 +6,27 @@ import {AiOutlineMail, AiOutlinePhone} from "react-icons/ai";
 import {GoLocation} from "react-icons/go";
 
 const Footer = () => {
+    const [isHover, setIsHover] = useState(false)
+
     return (
         <FooterStyled>
             <div className="header">
-                <div className="social">
-                    <FiInstagram/>
-                    <FiFacebook/>
-                    <FiTwitter/>
-                </div>
                 <Image
-                    height={70}
-                    width={90}
+                    height={80}
+                    width={110}
                     alt='logo'
                     src='/sportimpex_logo.svg'/>
+                <div className="social">
+                    <div>
+                        <FiInstagram className='social-icon'/>
+                    </div>
+                    <div>
+                        <FiFacebook className='social-icon'/>
+                    </div>
+                    <div>
+                        <FiTwitter className='social-icon'/>
+                    </div>
+                </div>
             </div>
             <div className="contact">
                 <div className="contact-link">

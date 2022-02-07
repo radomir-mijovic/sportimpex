@@ -22,21 +22,25 @@ export const FooterStyled = styled.footer`
   .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     border-bottom: 1px solid grey;
+    
+    @media (max-width: 650px) {
+      justify-content: space-between;
+    }
   }
   
   .social {
     width: 12rem;
     display: flex;
     justify-content: space-between;
+  }
 
-    > svg {
-      height: 2.5rem;
-      width: 2.5rem;
-      fill: #FFFF;
-      cursor: pointer;
-    }
+  .social-icon {
+    height: 2.5rem;
+    width: 2.5rem;
+    fill: grey;
+    cursor: pointer;
   }
   
   .contact {
@@ -59,18 +63,19 @@ export const FooterStyled = styled.footer`
     flex-wrap: wrap;
     
     > h2 {
-      margin: 1rem 0;
+      margin: .7rem 0;
       text-transform: uppercase;
+      color: #FFFF;
     }
     
     > h2,
     > h3 {
-      color: #FFFF;
       font-family: 'Didact Gothic', sans-serif;
     }
     
     > h3 {
-      font-size: 1.2rem;
+      font-size: 1.4rem;
+      color: grey;
     }
     
     > svg {
