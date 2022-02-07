@@ -16,8 +16,8 @@ export const bannerImages = [
     {
         id: 2,
         url: '/images/banner-3.jpg',
-        bannerTextMain: 'opremanje skolskih i',
-        bannerText: 'predskolskih ustanova',
+        bannerTextMain: 'opremanje školskih i',
+        bannerText: 'predškolskih ustanova',
         strokeColor: '#bdc3c7',
     }
 ]

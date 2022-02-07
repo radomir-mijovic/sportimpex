@@ -12,7 +12,7 @@ const Portfolio = () => {
         <SectionContainerStyled>
             <div className="header">
                 <MainH2>
-                    porfolio
+                    portfolio
                 </MainH2>
                 <MainH1>
                     po čemu smo <br/> poznati
