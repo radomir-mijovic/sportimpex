@@ -1,10 +1,10 @@
 import React from 'react';
 import styled from "styled-components";
 
-const GalleryPage = () => {
+const CatalogPage = () => {
     return (
         <PageWrapper>
-            gallery
+            Catalog
         </PageWrapper>
     );
 };
@@ -13,5 +13,4 @@ const PageWrapper = styled.div`
   height: 50vh;
   width: 100%;
 `
-
-export default GalleryPage;
+export default CatalogPage;
