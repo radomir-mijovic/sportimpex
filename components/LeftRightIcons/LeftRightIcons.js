@@ -10,8 +10,13 @@ const LeftRightIcons = ({setIsImageIndex}) => {
             <motion.div
                 onClick={() => setIsImageIndex(prevState => prevState - 1)}
                 initial={{opacity: 0}}
-                animate={{opacity: 1}}
-                transition={{duration: 1}}
+                animate={{
+                    opacity: 1,
+                    transition: {
+                        duration: .5
+                    }
+                }}
+                whileTap={{scale: .97}}
                 className="left-icon">
                 <Image
                     width='20'
@@ -23,7 +28,7 @@ const LeftRightIcons = ({setIsImageIndex}) => {
                 onClick={() => setIsImageIndex(prevState => prevState + 1)}
                 initial={{opacity: 0}}
                 animate={{opacity: 1}}
-                ransition={{duration: 1}}
+                whileTap={{scale: .97}}
                 className="right-icon">
                 <Image
                     width='20'

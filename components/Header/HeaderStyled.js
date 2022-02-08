@@ -54,13 +54,11 @@ export const HeaderButton = styled.button`
   cursor: pointer;
   outline: none;
   width: 12rem;
-  //box-shadow: ${props => props.isActiveButton ? 'inset 12rem 0 0 0 #E2001A' : undefined};
+  box-shadow: ${props => props.isActiveButton ? 'inset 12rem 0 0 0 #E2001A' : undefined};
 
-  //@media (hover: hover) {
-  //  :hover {
-  //    box-shadow: inset 12rem 0 0 0 #E2001A;
-  //    //color: #E2001A;
-  //    //border: 1px solid #FFFF;
-  //  }
-  //}
+  @media (hover: hover) {
+    :hover {
+      box-shadow: inset 12rem 0 0 0 #E2001A;
+    }
+  }
 `

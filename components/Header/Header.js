@@ -29,10 +29,10 @@ const Header = ({image}) => {
                 {image.bannerTextMain} <br/> <span className='header__h1-empty'>{image.bannerText}</span>
             </motion.h1>
             <HeaderButton
-                whileHover={{scale: 1.05, transition: {
+                whileHover={{scale: 1.02, transition: {
                     duration: .2
                     }}}
-                whileTap={{scale: .95, transition: {
+                whileTap={{scale: .98, transition: {
                         duration: .2
                     }}}
                 className={'active'}

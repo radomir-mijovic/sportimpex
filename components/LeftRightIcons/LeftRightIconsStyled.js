@@ -25,7 +25,7 @@ export const LeftRightIconsStyled = styled.div`
 
     @media (hover: hover) {
       :hover {
-        background: #E2001A;
+        background: transparent;
       }
     }
   }
