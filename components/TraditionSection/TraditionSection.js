@@ -27,8 +27,8 @@ const TraditionSection = () => {
                         sugestija našeg stručnog tima, posedujemo kapacitete, znanje
                         i iskustvo da ideju pretvorimo u gotov proizvod. Napravićemo
                         za Vas nameštaj koji se savršeno uklapa u Vaš prostor, modernog
-                        je dizajna i besprekornog kvalita. Potrebna je samo Vaša odluka
-                        , ostalo je naša briga.
+                        je dizajna i besprekornog kvaliteta. Potrebna je samo Vaša odluka,
+                        ostalo je naša briga.
                     </p>
                     <div className="red-line"/>
                 </div>
@@ -65,7 +65,8 @@ const TraditionSection = () => {
                         Sportimpex osluškuje i prati potrebe svojih zadovoljnih kupaca,
                         trudeći se da im izađe u susret u svim potrebama i željama.
                         Poverenje koje su nam klijenti poverili negujemo i opravdavamo iz dana u dan.
-                        Ponosni smo što sa klijentima održavamo dugotrajni odnos poverenja i fokusiranosti na rezultat.
+                        Ponosni smo što sa klijentima održavamo dugotrajni odnos poverenja
+                        i fokusiranosti na rezultat.
                     </p>
                     <div className="red-line"/>
                 </div>
