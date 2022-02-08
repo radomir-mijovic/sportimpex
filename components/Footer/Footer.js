@@ -31,7 +31,7 @@ const Footer = () => {
             <div className="contact">
                 <div className="contact-link">
                     <AiOutlineMail/>
-                    <h2>Mail</h2>
+                    <h2>Email</h2>
                     <h3>office@sportimpex.co.rs</h3>
                 </div>
                 <div className="contact-link">

@@ -15,7 +15,7 @@ const Banner = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setIsImageIndex(prevState => prevState + 1)
-        }, 10000)
+        }, 8000)
         return () => clearInterval(interval)
     })
 
