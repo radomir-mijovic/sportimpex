@@ -15,7 +15,7 @@ const Header = ({image}) => {
                     duration: .2
                     }}}
                 className='header__h2'>
-                Dobrodošli u Sportimpex
+                {image.subtitle}
             </motion.h2>
             <motion.h1
                 initial={{opacity: 0, y: '50%'}}

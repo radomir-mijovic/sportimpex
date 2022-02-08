@@ -26,7 +26,7 @@ export const HeaderStyled = styled.header`
     color: #FFFF;
     letter-spacing: 3px;
     font-weight: 600;
-    line-height: 110%;
+    line-height: 120%;
     margin-top: 1.5rem;
     margin-bottom: 2.5rem;
   }
