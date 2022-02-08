@@ -8,7 +8,7 @@ export const NavbarStyled = styled.nav`
   align-items: center;
   justify-content: space-between;
   z-index: 10;
-  padding: 0 15%;
+  padding: 0 clamp(5rem, 7vw, 15rem);
   background: ${props => props.isScrollY ? '#1b1b1b' : 'transparent'};
   transition: background-color .4s ease-in-out;
 

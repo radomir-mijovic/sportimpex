@@ -43,7 +43,7 @@ export const HeaderStyled = styled.header`
 `
 
 export const HeaderButton = styled.button`
-  border: 1px solid #E2001A;
+  border: 1.5px solid #E2001A;
   font-size: 1.4rem;
   font-weight: 300;
   text-transform: uppercase;

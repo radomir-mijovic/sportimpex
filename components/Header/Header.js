@@ -47,12 +47,6 @@ const Header = ({image}) => {
                 </span>
             </motion.h1>
             <HeaderButton
-                whileHover={{
-                    scale: 1.02,
-                    transition: {
-                        duration: .2
-                    }
-                }}
                 whileTap={{
                     scale: .98,
                     transition: {
@@ -75,7 +69,7 @@ const Header = ({image}) => {
                     }
                 }}
                 as={motion.button}>
-                O Nama
+                Kontakt
             </HeaderButton>
         </HeaderStyled>
     );
