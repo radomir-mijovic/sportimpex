@@ -3,7 +3,7 @@ import {LinkH2, SidebarStyled} from "./SidebarStyled";
 import {motion} from "framer-motion";
 import {navbar_links} from "../Navbar/navbar_links";
 import {useStyleContext} from "../../context/style_context";
-import Image from "next/image";
+import Link from 'next/link'
 
 const Sidebar = () => {
     const {
@@ -46,22 +46,24 @@ const Sidebar = () => {
                 transition: {
                     delay: .3,
                     duration: .5
-                }}}>
+                }
+            }}>
             {navbar_links.map((item, i) => {
                 return (
-                    <motion.li
-                        key={i}
-                        custom={i}
-                        animate="visible"
-                        variants={variants}
-                        initial="hidden">
-                        <LinkH2
-                            isActive={isActive}
-                            index={i}
-                            onClick={() => menuHandler(i)}>
-                            {item.title}
-                        </LinkH2>
-                    </motion.li>
+                    <Link key={i} href={item.href} passHref>
+                        <motion.li
+                            custom={i}
+                            animate="visible"
+                            variants={variants}
+                            initial="hidden">
+                            <LinkH2
+                                isActive={isActive}
+                                index={i}
+                                onClick={() => menuHandler(i)}>
+                                {item.title}
+                            </LinkH2>
+                        </motion.li>
+                    </Link>
                 )
             })}
         </SidebarStyled>

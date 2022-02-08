@@ -8,7 +8,7 @@ export default function Home() {
         <>
             <Head>
                 <title>
-                    Sportimpex
+                    Sport-impex
                 </title>
             </Head>
             <Banner/>

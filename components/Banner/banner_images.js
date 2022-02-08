@@ -18,9 +18,9 @@ export const bannerImages = [
     {
         id: 2,
         url: '/images/banner-3.jpg',
-        bannerTextMain: 'za vaš prostor',
-        bannerText: 'iz snova',
-        subtitle: 'Vaša ideja - naša realizacija',
+        bannerTextMain: 'Vaša ideja',
+        bannerText: 'naša realizacija',
+        subtitle: 'za vaš prostor iz snova',
         strokeColor: '#EAEAEA',
     }
 ]

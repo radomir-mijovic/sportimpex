@@ -54,7 +54,7 @@ const Navbar = () => {
                     {navbar_links.map((item, index) => {
                         return (
                             <li key={index}>
-                                <Link href={'/'}>
+                                <Link href={item.href}>
                                     <a onClick={() => setIsActive(index)}
                                        className={isActive === index ? 'active' : undefined}>
                                         {item.title}
