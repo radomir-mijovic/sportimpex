@@ -43,7 +43,7 @@ export const HeaderStyled = styled.header`
 `
 
 export const HeaderButton = styled.button`
-  border: 1.5px solid #E2001A;
+  border: 1px solid #E2001A;
   font-size: 1.4rem;
   font-weight: 300;
   text-transform: uppercase;
@@ -54,11 +54,11 @@ export const HeaderButton = styled.button`
   cursor: pointer;
   outline: none;
   width: 12rem;
-  box-shadow: ${props => props.isActiveButton ? 'inset 12rem 0 0 0 #E2001A' : undefined};
+  //box-shadow: ${props => props.isActiveButton ? 'inset 12rem 0 0 0 #E2001A' : undefined};
 
   @media (hover: hover) {
     :hover {
-      box-shadow: inset 12rem 0 0 0 #E2001A;
+      //box-shadow: inset 12rem 0 0 0 #E2001A;
     }
   }
 `

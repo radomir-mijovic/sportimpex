@@ -48,7 +48,7 @@ const Header = ({image}) => {
             </motion.h1>
             <HeaderButton
                 whileTap={{
-                    scale: .98,
+                    scale: .9,
                     transition: {
                         duration: .2
                     }
