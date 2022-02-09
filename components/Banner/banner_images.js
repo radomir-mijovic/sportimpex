@@ -12,7 +12,7 @@ export const bannerImages = [
         url: '/images/banner-2.jpg',
         bannerTextMain: 'mi gradimo',
         bannerText: 'poverenje',
-        subtitle: 'Dobro Došli u Sportimpex',
+        subtitle: 'Dobro Došli u Sport-impex',
         strokeColor: '#EAEAEA',
     },
     {
