@@ -53,7 +53,7 @@ const WorkProgressBar = () => {
                     <MainH1>
                         {isVisibleSchool &&
                         <CountUp
-                            start={60}
+                            start={40}
                             end={100}
                             duration={3}
                             useEasing={true}/>}+
@@ -67,7 +67,7 @@ const WorkProgressBar = () => {
                     <MainH1>
                         {isVisiblePeople &&
                         <CountUp
-                            start={440}
+                            start={410}
                             end={500}
                             duration={3}
                             useEasing={true}/>}+
