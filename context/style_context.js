@@ -1,4 +1,5 @@
-import React, {useContext, useEffect, useState} from "react";
+import React, {useContext, useState} from "react";
+
 
 const StyleContext = React.createContext()
 
@@ -6,7 +7,8 @@ export const StyleProvider = ({children}) => {
     const [isSidebar, setIsSidebar] = useState(false)
     const [isActive, setIsActive] = useState(0)
     const [isCloseIcon, setIsCloseIcon] = useState(false)
-
+    const [isScrollY, setIsScrollY] = useState(false)
+    const [isWidthMobile, setIsWidthMobile] = useState(false)
 
     return (
         <StyleContext.Provider value={{
@@ -15,7 +17,11 @@ export const StyleProvider = ({children}) => {
             isActive,
             setIsActive,
             isCloseIcon,
-            setIsCloseIcon
+            setIsCloseIcon,
+            isScrollY,
+            setIsScrollY,
+            isWidthMobile,
+            setIsWidthMobile
         }}>
             {children}
         </StyleContext.Provider>

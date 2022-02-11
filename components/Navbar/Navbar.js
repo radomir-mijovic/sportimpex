@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect} from 'react';
 import {NavbarStyled} from "./NavbarStyled";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,36 +10,23 @@ import {AnimatePresence} from "framer-motion";
 
 
 const Navbar = () => {
-    const {isSidebar, isActive, setIsActive} = useStyleContext()
-    const [isScrollY, setIsScrollY] = useState(false)
-    const [isWidthMobile, setIsWidthMobile] = useState(false)
+    const {
+        isSidebar,
+        isActive,
+        setIsActive,
+        isScrollY,
+        isWidthMobile,
+        setIsWidthMobile
+    } = useStyleContext()
 
 
     useEffect(() => {
-        if (document.body.scrollTop > 250) {
-            setIsScrollY(true)
-        }
-
         if (window.innerWidth < 801) {
             setIsWidthMobile(true)
         } else {
             setIsWidthMobile(false)
         }
-
-        function onScroll() {
-            if (document.body.scrollTop > 250) {
-                setIsScrollY(true)
-            } else {
-                setIsScrollY(false)
-            }
-            if (document.body.clientWidth < 801) {
-                setIsWidthMobile(true)
-            }
-        }
-
-        document.body.addEventListener("scroll", onScroll);
-        return () => document.body.removeEventListener("scroll", onScroll);
-    }, []);
+    });
 
 
     return (

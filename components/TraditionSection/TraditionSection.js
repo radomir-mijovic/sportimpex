@@ -22,12 +22,12 @@ const TraditionSection = () => {
                     <p>
                         Dozvolite našem timu da Vam
                         pomogne u planiranju i izradi
-                        školskog nameštaja po Vašoj želji.
+                        školskog i predškolskog nameštaja po Vašoj želji.
                         Bilo da imate sopstvenu zamisao ili Vam je potrebna pomoć i
                         sugestija našeg stručnog tima, posedujemo kapacitete, znanje
                         i iskustvo da ideju pretvorimo u gotov proizvod. Napravićemo
-                        za Vas nameštaj koji se savršeno uklapa u Vaš prostor, modernog
-                        je dizajna i besprekornog kvaliteta. Potrebna je samo Vaša odluka,
+                        za Vas nameštaj koji se savršeno uklapa u Vaše školske i predškolske ustanove, modernog
+                        dizajna i besprekornog kvaliteta. Potrebna je samo Vaša odluka,
                         ostalo je naša briga.
                     </p>
                     <div className="red-line"/>
@@ -52,7 +52,7 @@ const TraditionSection = () => {
                     </h1>
                     <p>
                         Kratak rok isporuke je jedna od naših najvećih prednosti.
-                        Zahvaljujući tome što se Sportimpex fabrika nalazi u Srbiji,
+                        Zahvaljujući tome što se Sport-impex fabrika nalazi u Srbiji,
                         u mogućnosti smo da proizvod isporučimo u veoma kratkom roku.
                     </p>
                     <div className="red-line"/>
@@ -62,7 +62,7 @@ const TraditionSection = () => {
                         ZADOVOLJNI KLIJENTI
                     </h1>
                     <p>
-                        Sportimpex osluškuje i prati potrebe svojih zadovoljnih kupaca,
+                        Sport-impex osluškuje i prati potrebe svojih zadovoljnih kupaca,
                         trudeći se da im izađe u susret u svim potrebama i željama.
                         Poverenje koje su nam klijenti poverili negujemo i opravdavamo iz dana u dan.
                         Ponosni smo što sa klijentima održavamo dugotrajni odnos poverenja

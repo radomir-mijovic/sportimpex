@@ -13,6 +13,6 @@ export const navbar_links = [
     },
     {
         title: 'Katalog',
-        href: '/about'
+        href: '/catalog'
     }
 ]

@@ -1,7 +1,14 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styled from "styled-components";
+import {useStyleContext} from "../context/style_context";
 
 const CatalogPage = () => {
+    const {setIsActive, setIsScrollY} = useStyleContext()
+
+    useEffect(() => {
+        setIsActive(3)
+        setIsScrollY(true)
+    })
     return (
         <PageWrapper>
             Catalog
