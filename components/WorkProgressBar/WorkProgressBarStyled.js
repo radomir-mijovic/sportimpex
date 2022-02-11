@@ -5,14 +5,9 @@ export const WorkProgressBarStyled = styled.main`
   height: auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  //display: flex;
-  //align-items: center;
-  //justify-content: space-evenly;
   grid-gap: 3rem;
   
-  .projects,
-  .customers {
-    //min-width: 30rem;
+  .card {
     height: 25rem;
     display: flex;
     flex-direction: column;
@@ -29,7 +24,7 @@ export const WorkProgressBarStyled = styled.main`
   
   @media (max-width: 650px) {
     flex-direction: column;
-    margin: 4rem 0;
+    margin: 8rem 0;
   }
   
   @keyframes width-animation {

@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import {WorkProgressBarStyled} from "./WorkProgressBarStyled";
 import {SectionContainerStyled} from "../SectionContainer/SectionContainerStyled";
-import {IoPeopleCircleOutline} from 'react-icons/io5'
 import {BiHomeSmile} from 'react-icons/bi'
 import {FaSchool} from "react-icons/fa";
 import {motion} from "framer-motion";
 import CountUp from "react-countup";
 import {MainH1, MainH2} from "../../styles/GlobalStyles";
 import {GiShakingHands} from "react-icons/gi";
+import Image from "next/image";
 
 const WorkProgressBar = () => {
     const [isVisibleHands, setIsVisibleHands] = useState(false)
@@ -20,8 +20,12 @@ const WorkProgressBar = () => {
             <WorkProgressBarStyled>
                 <motion.div
                     onViewportEnter={() => setIsVisibleHands(true)}
-                    className="projects">
-                    <GiShakingHands/>
+                    className="card">
+                    <Image
+                        width={40}
+                        height={40}
+                        src={'/icons/company-logo.svg'}
+                        alt={'logo'}/>
                     <MainH1>
                         {isVisibleHands &&
                         <CountUp
@@ -34,7 +38,7 @@ const WorkProgressBar = () => {
                 </motion.div>
                 <motion.div
                     onViewportEnter={() => setIsVisibleHome(true)}
-                    className="projects">
+                    className="card">
                     <BiHomeSmile/>
                     <MainH1>
                         {isVisibleHome &&
@@ -48,7 +52,7 @@ const WorkProgressBar = () => {
                 </motion.div>
                 <motion.div
                     onViewportEnter={() => setIsVisibleSchool(true)}
-                    className="projects">
+                    className="card">
                     <FaSchool/>
                     <MainH1>
                         {isVisibleSchool &&
@@ -62,8 +66,8 @@ const WorkProgressBar = () => {
                 </motion.div>
                 <motion.div
                     onViewportEnter={() => setIsVisiblePeople(true)}
-                    className="customers">
-                    <IoPeopleCircleOutline/>
+                    className="card">
+                    <GiShakingHands/>
                     <MainH1>
                         {isVisiblePeople &&
                         <CountUp
