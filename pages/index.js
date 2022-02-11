@@ -2,6 +2,7 @@ import Head from "next/head";
 import Banner from "../components/Banner/Banner";
 import TraditionSection from "../components/TraditionSection/TraditionSection";
 import Portfolio from "../components/Portfolio/Portfolio";
+import WorkProgressBar from "../components/WorkProgressBar/WorkProgressBar";
 
 export default function Home() {
     return (
@@ -14,6 +15,7 @@ export default function Home() {
             <Banner/>
             <TraditionSection/>
             <Portfolio/>
+            <WorkProgressBar/>
         </>
     )
 }
