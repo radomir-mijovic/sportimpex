@@ -12,6 +12,10 @@ export const SidebarStyled = styled(motion.div)`
   justify-content: center;
   flex-direction: column;
   
+  > li {
+    list-style-type: none;
+  }
+  
   @media (min-width: 801px) {
     display: none;
   }

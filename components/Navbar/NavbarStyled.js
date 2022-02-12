@@ -14,8 +14,7 @@ export const NavbarStyled = styled.nav`
 
   .links {
     display: flex;
-
-
+    
     > li > a {
       width: 100%;
       color: #FFFF;
