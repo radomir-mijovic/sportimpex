@@ -16,6 +16,9 @@ class MyDocument extends Document {
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
                     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap"
                           rel="stylesheet"/>
+                    <meta name="keywords" content="sportimpex, dečija igrališta,školski nameštaj,
+                     predškolski nameštaj, sportski rekviziti, oprema za skole, oprema za vrtic"/>
+                    <meta name='description' content='Sportimpex, Opremanje Skola i Vrtica'/>
                 </Head>
                 <body>
                 <Main/>

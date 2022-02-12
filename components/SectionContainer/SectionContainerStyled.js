@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SectionContainerStyled = styled.section`
   width: 100vw;
   height: auto;
-  background: #FFF;
+  background: ${props => props.background ? props.background : '#FFFF'};
   padding: 10rem 15%;
   position: relative;
 

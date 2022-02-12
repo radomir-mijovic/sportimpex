@@ -5,6 +5,7 @@ import Portfolio from "../components/Portfolio/Portfolio";
 import WorkProgressBar from "../components/WorkProgressBar/WorkProgressBar";
 import {useStyleContext} from "../context/style_context";
 import {useEffect} from "react";
+import WhyUs from "../components/WhyUs/WhyUs";
 
 export default function Home() {
     const {setIsActive, setIsScrollY, setIsWidthMobile} = useStyleContext()
@@ -49,6 +50,7 @@ export default function Home() {
             <TraditionSection/>
             <Portfolio/>
             <WorkProgressBar/>
+            <WhyUs/>
         </>
     )
 }

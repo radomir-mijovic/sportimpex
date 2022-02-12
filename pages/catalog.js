@@ -8,7 +8,7 @@ const CatalogPage = () => {
     const {setIsActive, setIsScrollY} = useStyleContext()
 
     useEffect(() => {
-        setIsActive(3)
+        setIsActive(2)
         setIsScrollY(true)
 
         document.body.scroll({

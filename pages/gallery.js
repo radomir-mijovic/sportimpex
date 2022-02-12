@@ -8,7 +8,7 @@ const GalleryPage = () => {
     const {setIsActive, setIsScrollY} = useStyleContext()
 
     useEffect(() => {
-        setIsActive(2)
+        setIsActive(1)
         setIsScrollY(true)
 
         document.body.scroll({
