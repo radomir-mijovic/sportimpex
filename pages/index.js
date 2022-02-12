@@ -11,6 +11,11 @@ export default function Home() {
 
 
     useEffect(() => {
+        document.body.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        })
         setIsActive(0)
         if (document.body.scrollTop > 250) {
             setIsScrollY(true)

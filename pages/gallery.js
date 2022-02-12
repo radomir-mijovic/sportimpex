@@ -10,6 +10,12 @@ const GalleryPage = () => {
     useEffect(() => {
         setIsActive(2)
         setIsScrollY(true)
+
+        document.body.scroll({
+            top: 0,
+            left: 0,
+            behavior: 'smooth'
+        })
     })
 
     return (

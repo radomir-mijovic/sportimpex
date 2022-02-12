@@ -11,6 +11,12 @@ function MyApp({Component, pageProps}) {
     const [isLoadingPage, setIsLoadingPage] = useState(true)
 
     useEffect(() => {
+        document.body.scroll({
+            top: 1,
+            left: 0,
+            behavior: 'smooth'
+        })
+
         setTimeout(() => {
             setIsLoadingPage(false)
         }, 3300)
