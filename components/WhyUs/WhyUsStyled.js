@@ -7,4 +7,8 @@ export const WhyUsStyled = styled.main`
   .section-text {
     margin: 3rem 0;
   }
+  
+  @media (max-width: 650px) {
+    margin: 8rem 0;
+  }
 `

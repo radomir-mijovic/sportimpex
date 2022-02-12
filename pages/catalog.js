@@ -24,9 +24,9 @@ const CatalogPage = () => {
             </Head>
             <PageWrapper>
                 <Image
-                    width={700}
+                    width={800}
                     height={500}
-                    src='/images/coming-soon.gif'
+                    src='/images/924.jpg'
                     alt='coming soon'/>
             </PageWrapper>
 
