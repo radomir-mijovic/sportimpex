@@ -43,7 +43,7 @@ export default function Home() {
         <>
             <Head>
                 <title>
-                    Opremanje Škola i Vrtića - Sport-impex
+                    Opremanje Škola i Vrtića - Sportimpex
                 </title>
             </Head>
             <Banner/>

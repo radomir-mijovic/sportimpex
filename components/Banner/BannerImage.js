@@ -16,7 +16,7 @@ const BannerImage = ({image}) => {
                 layout='fill'
                 objectFit='cover'
                 quality='100'
-                alt='banner-img'/>
+                alt='sportimpex'/>
         </BannerImageStyled>
     );
 };

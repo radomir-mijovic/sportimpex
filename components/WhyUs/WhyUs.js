@@ -46,12 +46,19 @@ const WhyUs = () => {
                         i igrališta, što nam omogućava da budemo vrlo konkurentni sa cenama i rokovima isporuke.
                         Proizvodni pogon se nalazi u Ostružnici u Kosmajskoj 10, dok se kancelarije i izložbeni salon
                         nalaze na Banovom brdu u Požeškoj 148a.
-                        <br/><br/>
-                        Naš predškolski program obuhvata dečiji i kancelarijski nameštaj, kuhinjski inventar i opremu
+                    </p>
+                    <h3>
+                        Opremanje vrtića
+                    </h3>
+                    <p>
+                        - Naš predškolski program obuhvata dečiji i kancelarijski nameštaj, kuhinjski inventar i opremu
                         za vešeraj, unutrašnje igraonice i didaktička sredstva,
                         kao i raznovrsni program spoljnih igrališta za decu.
-                        <br/>
-                        Naš školski program obuhvata školski i kancelarijski nameštaj,
+                    </p>
+                    <h3>
+                        Opremanje škola
+                    </h3>
+                    <p> - Naš školski program obuhvata školski i kancelarijski nameštaj,
                         sve vrste nastavnih sredstava, audio vizuelnu opremu,
                         kao i kompletnu sportsku opremu i rekvizite za školske sale.
                     </p>

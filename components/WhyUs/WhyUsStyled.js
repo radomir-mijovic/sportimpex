@@ -6,6 +6,11 @@ export const WhyUsStyled = styled.main`
 
   .section-text {
     margin: 3rem 0;
+    
+    > h3 {
+      font-size: 2.4rem;
+      font-weight: 400;
+    }
   }
 
   .section-header-text {

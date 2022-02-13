@@ -7,6 +7,7 @@ import MenuButton from "../MenuButton/MenuButton";
 import Sidebar from "../Sidebar/Sidebar";
 import {useStyleContext} from "../../context/style_context";
 import {AnimatePresence} from "framer-motion";
+import {useRouter} from "next/router";
 
 
 const Navbar = () => {
@@ -19,6 +20,11 @@ const Navbar = () => {
         setIsWidthMobile
     } = useStyleContext()
 
+    const router = useRouter()
+
+    function toHome() {
+        router.push('/')
+    }
 
     useEffect(() => {
         if (window.innerWidth < 801) {
@@ -32,14 +38,13 @@ const Navbar = () => {
     return (
         <>
             <NavbarStyled isScrollY={isScrollY}>
-                <Link href='/' passHref>
-                    <Image className='nav-logo'
-                           src='/sportimpex_logo.svg'
-                           height={isWidthMobile ? '60' : '100'}
-                           width={isWidthMobile ? '100' : '170'}
-                           objectFit='fill'
-                           alt='logo'/>
-                </Link>
+                <Image onClick={toHome}
+                       className='nav-logo'
+                       src='/sportimpex_logo.svg'
+                       height={isWidthMobile ? '60' : '100'}
+                       width={isWidthMobile ? '100' : '170'}
+                       objectFit='fill'
+                       alt='logo'/>
                 <ul className='links'>
                     {navbar_links.map((item, index) => {
                         return (

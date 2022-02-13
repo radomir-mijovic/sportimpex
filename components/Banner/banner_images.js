@@ -1,9 +1,9 @@
 export const bannerImages = [
     {
         id: 0,
-        url: '/images/banner-1.jpeg',
-        bannerTextMain: 'opremanje školskih i',
-        bannerText: 'predškolskih ustanova',
+        url: '/images/sportimpex.jpeg',
+        bannerTextMain: 'Opremanje Škola',
+        bannerText: 'i Vrtića',
         subtitle: 'Iz naše fabrike do vašeg objekta',
         strokeColor: '#EAEAEA',
     },
@@ -20,7 +20,7 @@ export const bannerImages = [
         url: '/images/banner-3.jpg',
         bannerTextMain: 'Vaša ideja',
         bannerText: 'naša realizacija',
-        subtitle: 'za vaš prostor iz snova',
+        subtitle: 'za vašu ustanovu iz snova',
         strokeColor: '#EAEAEA',
     }
 ]
