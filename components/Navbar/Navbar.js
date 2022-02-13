@@ -32,11 +32,14 @@ const Navbar = () => {
     return (
         <>
             <NavbarStyled isScrollY={isScrollY}>
-                <Image src='/sportimpex_logo.svg'
-                       height={isWidthMobile ? '60' : '100'}
-                       width={isWidthMobile ? '100' : '170'}
-                       objectFit='fill'
-                       alt='logo'/>
+                <Link href='/' passHref>
+                    <Image className='nav-logo'
+                           src='/sportimpex_logo.svg'
+                           height={isWidthMobile ? '60' : '100'}
+                           width={isWidthMobile ? '100' : '170'}
+                           objectFit='fill'
+                           alt='logo'/>
+                </Link>
                 <ul className='links'>
                     {navbar_links.map((item, index) => {
                         return (

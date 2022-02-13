@@ -52,9 +52,7 @@ export const NavbarStyled = styled.nav`
   }
   
   .nav-logo {
-    width: 12rem;
-    height: 3rem;
-    position: relative;
+    cursor: pointer;
   }
   
   @media (max-width: 800px) {
