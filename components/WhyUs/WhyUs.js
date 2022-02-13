@@ -2,6 +2,8 @@ import React from 'react';
 import {WhyUsStyled} from "./WhyUsStyled";
 import {SectionContainerStyled} from "../SectionContainer/SectionContainerStyled";
 import {MainBlackH2, MainH2} from "../../styles/GlobalStyles";
+import {BiHappy} from "react-icons/bi";
+import {GiSandsOfTime, GiReceiveMoney, GiSofa} from "react-icons/gi";
 
 const WhyUs = () => {
     return (
@@ -12,24 +14,20 @@ const WhyUs = () => {
                 </MainH2>
                 <div className="section-header-text">
                     <p>
-                        <span className='red-dash'>- </span>
+                        <BiHappy/>
                         Činimo škole i vrtiće srećnim mestima.
-                        {/*<span className='red-dash'> -</span>*/}
                     </p>
                     <p>
-                        <span className='red-dash'>- </span>
+                        <GiSandsOfTime/>
                         Štedimo Vaše vreme i novac.
-                        {/*<span className='red-dash'> -</span>*/}
                     </p>
                     <p>
-                        <span className='red-dash'>- </span>
+                        <GiSofa/>
                         Za udobnost koju najmlađi zaslužuju.
-                        {/*<span className='red-dash'> -</span>*/}
                     </p>
                     <p>
-                        <span className='red-dash'>- </span>
+                        <GiReceiveMoney/>
                         Kvalitet ne mora da bude skup.
-                        {/*<span className='red-dash'> -</span>*/}
                     </p>
                 </div>
                 <MainBlackH2>

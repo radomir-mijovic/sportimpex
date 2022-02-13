@@ -18,6 +18,16 @@ export const WhyUsStyled = styled.main`
     grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr));
     grid-gap: .5rem;
     margin: 2rem 0;
+    
+    > p {
+      display: flex;
+      align-items: center;
+      
+      > svg {
+        margin-right: .5rem;
+        fill: #1b1b1b;
+      }
+    }
   }
 
   .red-dash {
