@@ -1,7 +1,7 @@
 import React from 'react';
 import {WhyUsStyled} from "./WhyUsStyled";
 import {SectionContainerStyled} from "../SectionContainer/SectionContainerStyled";
-import {MainH1, MainH2} from "../../styles/GlobalStyles";
+import {MainBlackH2, MainH2} from "../../styles/GlobalStyles";
 
 const WhyUs = () => {
     return (
@@ -10,9 +10,9 @@ const WhyUs = () => {
                 <MainH2>
                     Zašto mi
                 </MainH2>
-                <MainH1>
+                <MainBlackH2>
                     O nama
-                </MainH1>
+                </MainBlackH2>
                 <div className="section-text">
                     <p>
                         Sport-impex ima sve što je Vašoj školskoj ili predškolskoj ustanovi potrebno.

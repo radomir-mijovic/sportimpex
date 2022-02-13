@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import {PortfolioStyled} from "./PortfolioStyled";
 import {SectionContainerStyled} from "../SectionContainer/SectionContainerStyled";
 import Image from "next/image";
-import {MainH1, MainH2} from "../../styles/GlobalStyles";
+import {MainBlackH2, MainH1, MainH2} from "../../styles/GlobalStyles";
 import {motion} from "framer-motion";
 
 const Portfolio = () => {
@@ -14,9 +14,9 @@ const Portfolio = () => {
                 <MainH2>
                     portfolio
                 </MainH2>
-                <MainH1>
+                <MainBlackH2>
                     po čemu smo <br/> poznati
-                </MainH1>
+                </MainBlackH2>
             </div>
             <PortfolioStyled>
                 <motion.div

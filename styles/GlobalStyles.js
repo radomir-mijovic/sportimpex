@@ -49,6 +49,15 @@ export const MainH1 = styled.h1`
   line-height: 1.25em;
 `
 
+export const MainBlackH2 = styled.h2`
+  color: #1b1b1b;
+  text-transform: uppercase;
+  font-size: clamp(3.5rem, 4vw, 5rem);
+  font-weight: 500;
+  letter-spacing: 3px;
+  line-height: 1.25em;
+`
+
 export const MainH2 = styled.h2`
   color: #E2001A;
   text-transform: uppercase;

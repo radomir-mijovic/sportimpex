@@ -31,7 +31,7 @@ export const TraditionSectionStyled = styled.section`
     flex-direction: column;
     justify-content: center;
     
-    > h1 {
+    > h2 {
       font-size: 2.5rem;
       font-weight: 300;
       color: #1b1b1b;

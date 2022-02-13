@@ -1,6 +1,6 @@
 import React from 'react';
 import {TraditionSectionStyled} from "./TraditionSectionStyled";
-import {MainH1, MainH2} from "../../styles/GlobalStyles";
+import {MainBlackH2, MainH2} from "../../styles/GlobalStyles";
 import Image from "next/image";
 
 const TraditionSection = () => {
@@ -10,15 +10,15 @@ const TraditionSection = () => {
                 <MainH2>
                     iskustvo
                 </MainH2>
-                <MainH1>
+                <MainBlackH2>
                     tradicija duga preko <br/> 20 godina
-                </MainH1>
+                </MainBlackH2>
             </div>
             <div className="tradition-card">
                 <div className="text">
-                    <h1>
+                    <h2>
                         NAMEŠTAJ PO MERI
-                    </h1>
+                    </h2>
                     <p>
                         Dozvolite našem timu da Vam
                         pomogne u planiranju i izradi
@@ -47,9 +47,9 @@ const TraditionSection = () => {
                     src='/images/packaging.jpg'
                     alt='image'/>
                 <div className="text">
-                    <h1>
+                    <h2>
                         KRATAK ROK ISPORUKE
-                    </h1>
+                    </h2>
                     <p>
                         Kratak rok isporuke je jedna od naših najvećih prednosti.
                         Zahvaljujući tome što se Sport-impex fabrika nalazi u Srbiji,
@@ -58,9 +58,9 @@ const TraditionSection = () => {
                     <div className="red-line"/>
                 </div>
                 <div className="text">
-                    <h1>
+                    <h2>
                         ZADOVOLJNI KLIJENTI
-                    </h1>
+                    </h2>
                     <p>
                         Sport-impex osluškuje i prati potrebe svojih zadovoljnih kupaca,
                         trudeći se da im izađe u susret u svim potrebama i željama.
