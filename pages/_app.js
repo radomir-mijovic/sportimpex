@@ -7,7 +7,6 @@ import {Router} from "next/router";
 import {useEffect, useState} from "react";
 import LoadingLogo from "../components/LoadingLogo/LoadingLogo";
 
-// TODO set html lang and description tag
 
 function MyApp({Component, pageProps}) {
     const [isLoadingPage, setIsLoadingPage] = useState(true)

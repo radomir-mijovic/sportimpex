@@ -25,7 +25,7 @@ const WorkProgressBar = () => {
                         width={40}
                         height={40}
                         src={'/icons/company-logo.svg'}
-                        alt={'logo'}/>
+                        alt='logo'/>
                     <MainH1>
                         {isVisibleHands &&
                         <CountUp

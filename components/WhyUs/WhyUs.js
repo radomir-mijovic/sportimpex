@@ -10,6 +10,28 @@ const WhyUs = () => {
                 <MainH2>
                     Zašto mi
                 </MainH2>
+                <div className="section-header-text">
+                    <p>
+                        <span className='red-dash'>- </span>
+                        Činimo škole i vrtiće srećnim mestima.
+                        {/*<span className='red-dash'> -</span>*/}
+                    </p>
+                    <p>
+                        <span className='red-dash'>- </span>
+                        Štedimo Vaše vreme i novac.
+                        {/*<span className='red-dash'> -</span>*/}
+                    </p>
+                    <p>
+                        <span className='red-dash'>- </span>
+                        Za udobnost koju najmlađi zaslužuju.
+                        {/*<span className='red-dash'> -</span>*/}
+                    </p>
+                    <p>
+                        <span className='red-dash'>- </span>
+                        Kvalitet ne mora da bude skup.
+                        {/*<span className='red-dash'> -</span>*/}
+                    </p>
+                </div>
                 <MainBlackH2>
                     O nama
                 </MainBlackH2>
