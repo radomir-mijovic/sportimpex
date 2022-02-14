@@ -6,10 +6,19 @@ import Footer from "../components/Footer/Footer";
 import {Router} from "next/router";
 import {useEffect, useState} from "react";
 import LoadingLogo from "../components/LoadingLogo/LoadingLogo";
+import TopBarProgress from "react-topbar-progress-indicator";
+
+TopBarProgress.config({
+    barColors: {
+        '0': '#E2001A',
+        '1': '#E2001A'
+    }
+})
 
 
 function MyApp({Component, pageProps}) {
     const [isLoadingPage, setIsLoadingPage] = useState(true)
+    const [isRouteChange, setIsRouteChange] = useState(false)
 
     useEffect(() => {
         document.body.scroll({
@@ -20,18 +29,16 @@ function MyApp({Component, pageProps}) {
 
         setTimeout(() => {
             setIsLoadingPage(false)
-        }, 3300)
+        }, 3000)
     }, [])
 
-    // Router.events.on('routeChangeStart', () => {
-    //     setIsLoadingPage(true)
-    // })
-    //
-    // Router.events.on('routeChangeComplete', () => {
-    //     setTimeout(() => {
-    //         setIsLoadingPage(false)
-    //     }, 1500)
-    // })
+    Router.events.on('routeChangeStart', () => {
+        setIsRouteChange(true)
+    })
+
+    Router.events.on('routeChangeComplete', () => {
+        setIsRouteChange(false)
+    })
 
     return (
         <StyleProvider>
@@ -40,6 +47,7 @@ function MyApp({Component, pageProps}) {
                 {isLoadingPage && <LoadingLogo/>}
             </AnimatePresence>
             <Navbar/>
+            {isRouteChange && <TopBarProgress/>}
             <Component {...pageProps} />
             <Footer/>
         </StyleProvider>
