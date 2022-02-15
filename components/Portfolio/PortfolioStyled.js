@@ -16,6 +16,47 @@ export const PortfolioStyled = styled.section`
     height: auto;
     box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px, rgba(0, 0, 0, 0.3) 0 30px 60px -30px;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    overflow-x: hidden;
+
+    > h4 {
+      color: #fff3f3;
+      font-size: clamp(1.6rem, 1vw, 2.5rem);
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 3px;
+      padding: 1rem 2.4rem;
+      z-index: 3;
+      background: rgba(0, 0, 0, .4);
+      margin-bottom: 1rem;
+      margin-right: 1rem;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      border: 1px solid #E2001A;
+
+      > span {
+        font-weight: 300;
+      }
+
+      > svg {
+        margin-left: 1rem;
+        height: 100%;
+        transition: all .5s ease;
+        transform-origin: center;
+      }
+      
+      :hover {
+        
+        > svg {
+          fill: #E2001A;
+          transform: scale(1.3) translateX(.7rem);
+        }
+      }
+    }
   }
 
   .red-overlay {
