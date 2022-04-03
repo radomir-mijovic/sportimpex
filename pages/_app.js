@@ -52,7 +52,6 @@ function MyApp({Component, pageProps}) {
             <Footer/>
         </StyleProvider>
     )
-
 }
 
 export default MyApp

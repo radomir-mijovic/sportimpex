@@ -3,6 +3,7 @@ import styled from "styled-components";
 import {useStyleContext} from "../context/style_context";
 import Head from "next/head";
 import Image from "next/image";
+import PdfCatalog from "../components/PdfCatalog/PdfCatalog";
 
 const CatalogPage = () => {
     const {setIsActive, setIsScrollY} = useStyleContext()
@@ -23,11 +24,12 @@ const CatalogPage = () => {
                 <title>Katalog</title>
             </Head>
             <PageWrapper>
-                <Image
-                    width={800}
-                    height={500}
-                    src='/images/924.jpg'
-                    alt='coming soon'/>
+                    <PdfCatalog/>
+                {/*<Image*/}
+                {/*    width={800}*/}
+                {/*    height={500}*/}
+                {/*    src='/images/924.jpg'*/}
+                {/*    alt='coming soon'/>*/}
             </PageWrapper>
 
         </>
@@ -35,9 +37,10 @@ const CatalogPage = () => {
 };
 
 const PageWrapper = styled.div`
-  height: 70vh;
-  width: 100%;
-  display: grid;
-  place-items: center;
+  height: 100vh;
+  margin-bottom: 5rem;
+  //width: 100%;
+  //display: grid;
+  //place-items: center;
 `
 export default CatalogPage;
