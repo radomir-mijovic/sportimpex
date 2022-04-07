@@ -5,11 +5,10 @@ import Image from "next/image";
 import {MainBlackH2, MainH2} from "../../styles/GlobalStyles";
 import {motion} from "framer-motion";
 import {HiArrowRight} from "react-icons/hi";
+import {useRouter} from "next/router";
 
 const Portfolio = () => {
-    const [isId, setIsId] = useState(null)
-    const [isActive, setIsActive] = useState(false)
-    const [isHover, setIsHover] = useState(false)
+    const router = useRouter()
 
     return (
         <SectionContainerStyled>
@@ -31,9 +30,10 @@ const Portfolio = () => {
                     <Image
                         layout='fill'
                         objectFit='cover'
-                        src='/images/school-furniture.jpg'
+                        src='/images/school-furniture2.jpg'
                         alt='opremanje skola'/>
                     <motion.h4
+                        onClick={() => router.push('/gallery')}
                         transition={{duration: .2}}
                         whileTap={{scale: .9}}>
                         <span>Opremanje Škola .01</span>
@@ -50,9 +50,10 @@ const Portfolio = () => {
                         layout='fill'
                         objectFit='cover'
                         quality='100'
-                        src='/images/preschool-furniture.jpg'
+                        src='/images/preschool-furniture2.JPG'
                         alt='opremanje vrtica'/>
                     <motion.h4
+                        onClick={() => router.push('/gallery')}
                         transition={{duration: .2}}
                         whileTap={{scale: .9}}>
                         <span>Opremanje VrtiĆa</span>
@@ -72,6 +73,7 @@ const Portfolio = () => {
                         src='/images/office-furniture.jpg'
                         alt='office furniture'/>
                     <motion.h4
+                        onClick={() => router.push('/gallery')}
                         transition={{duration: .2}}
                         whileTap={{scale: .9}}>
                         <span>kancelarije i zborinice</span>
@@ -88,9 +90,10 @@ const Portfolio = () => {
                         layout='fill'
                         objectFit='cover'
                         quality='100'
-                        src='/images/chemistry-classroom.jpg'
+                        src='/images/chemistry-classroom2.jpg'
                         alt='chemistry furniture'/>
                     <motion.h4
+                        onClick={() => router.push('/gallery')}
                         transition={{duration: .2}}
                         whileTap={{scale: .9}}>
                         <span>kabineti za fiziku i hemiju</span>
@@ -107,9 +110,10 @@ const Portfolio = () => {
                         layout='fill'
                         objectFit='cover'
                         quality='100'
-                        src='/images/garden-furniture.jpg'
+                        src='/images/garden-furniture2.jpg'
                         alt='garden furniture'/>
                     <motion.h4
+                        onClick={() => router.push('/gallery')}
                         transition={{duration: .2}}
                         whileTap={{scale: .9}}>
                         <span>dvoriŠni mobilijar</span>
@@ -126,9 +130,10 @@ const Portfolio = () => {
                         layout='fill'
                         objectFit='cover'
                         quality='100'
-                        src='/images/sport-furniture.jpg'
+                        src='/images/sport-furniture2.jpg'
                         alt='sport furniture'/>
                     <motion.h4
+                        onClick={() => router.push('/gallery')}
                         transition={{duration: .2}}
                         whileTap={{scale: .9}}>
                         <span>sportska oprema i rekviziti</span>
@@ -148,6 +153,7 @@ const Portfolio = () => {
                         src='/images/kids-playground1.jpg'
                         alt='chemistry furniture'/>
                     <motion.h4
+                        onClick={() => router.push('/gallery')}
                         transition={{duration: .2}}
                         whileTap={{scale: .9}}>
                         <span>Dečija igrališta</span>

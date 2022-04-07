@@ -39,8 +39,6 @@ const CatalogPage = () => {
 const PageWrapper = styled.div`
   height: 100vh;
   margin-bottom: 5rem;
-  //width: 100%;
-  //display: grid;
-  //place-items: center;
 `
+
 export default CatalogPage;
