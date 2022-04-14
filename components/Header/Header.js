@@ -46,6 +46,7 @@ const Header = ({image}) => {
                     {image.bannerText}
                 </span>
             </motion.h1>
+            <a className='phone' href="mailto:office@sportimpex.co.rs">
             <HeaderButton
                 whileTap={{
                     scale: .9,
@@ -71,6 +72,7 @@ const Header = ({image}) => {
                 as={motion.button}>
                 Kontakt
             </HeaderButton>
+            </a>
         </HeaderStyled>
     );
 };

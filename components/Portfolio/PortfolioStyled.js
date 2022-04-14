@@ -139,6 +139,7 @@ export const PortfolioStyled = styled.section`
     grid-template-columns: 1fr;
     grid-template-rows: repeat(9, 1fr);
     min-height: 190rem;
+    margin-bottom: 5rem;
 
     .card-1,
     .card-2,
