@@ -16,7 +16,7 @@ class MyDocument extends Document {
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
                     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap"
                           rel="stylesheet"/>
-                    <link rel="canonical" href="https://sportimpex.netlify.app/"/>
+                    <link rel="canonical" href="https://www.sportimpex.org"/>
                     <meta name="keywords" content="sportimpex, dečija igrališta,školski nameštaj,
                      predškolski nameštaj, sportski rekviziti, oprema za skole, oprema za vrtic"/>
                     <meta name='description' content='Sportimpex, Opremanje Škola i Vrtića. Sve za vašu ustanovu'/>
