@@ -35,7 +35,7 @@ const WhyUs = () => {
                 </MainBlackH2>
                 <div className="section-text">
                     <p>
-                        Sport-impex ima sve što je Vašoj školskoj ili predškolskoj ustanovi potrebno.
+                        Sportimpex ima sve što je Vašoj školskoj ili predškolskoj ustanovi potrebno.
                         Sa tradicijom dugom preko 20 godina, i spostvenim proizvodnim programom, postali smo
                         specijalizovani za kompletno unutrašnje i spoljašnje opremanje školskih
                         i predškolskih ustanova.

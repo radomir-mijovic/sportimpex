@@ -7,6 +7,9 @@ class MyDocument extends Document {
         return (
             <Html lang='sr'>
                 <Head>
+                    <title>
+                        Opremanje Škola i Vrtića - Sportimpex
+                    </title>
                     <link rel="shortcut icon" href="sportimpex_logo.ico"/>
                     <link rel="preconnect" href="https://fonts.googleapis.com"/>
                     <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin/>
@@ -17,7 +20,7 @@ class MyDocument extends Document {
                     <link href="https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap"
                           rel="stylesheet"/>
                     <link rel="canonical" href="https://www.sportimpex.org"/>
-                    <meta name="keywords" content="sportimpex, dečija igrališta,školski nameštaj,
+                    <meta name="keywords" content=" opremanje skola, opremanje vrtica, sportimpex, dečija igrališta,školski nameštaj,
                      predškolski nameštaj, sportski rekviziti, oprema za skole, oprema za vrtic"/>
                     <meta name='description' content='Sportimpex, Opremanje Škola i Vrtića. Sve za vašu ustanovu'/>
                 </Head>

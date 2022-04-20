@@ -52,7 +52,7 @@ const TraditionSection = () => {
                     </h2>
                     <p>
                         Kratak rok isporuke je jedna od naših najvećih prednosti.
-                        Zahvaljujući tome što se Sport-impex fabrika nalazi u Srbiji,
+                        Zahvaljujući tome što se Sportimpex fabrika nalazi u Srbiji,
                         u mogućnosti smo da proizvod isporučimo u veoma kratkom roku.
                     </p>
                     <div className="red-line"/>
@@ -62,7 +62,7 @@ const TraditionSection = () => {
                         ZADOVOLJNI KLIJENTI
                     </h2>
                     <p>
-                        Sport-impex osluškuje i prati potrebe svojih zadovoljnih kupaca,
+                        Sportimpex osluškuje i prati potrebe svojih zadovoljnih kupaca,
                         trudeći se da im izađe u susret u svim potrebama i željama.
                         Poverenje koje su nam klijenti poverili negujemo i opravdavamo iz dana u dan.
                         Ponosni smo što sa klijentima održavamo dugotrajni odnos poverenja
