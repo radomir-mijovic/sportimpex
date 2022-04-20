@@ -35,10 +35,12 @@ const WhyUs = () => {
                 </MainBlackH2>
                 <div className="section-text">
                     <p>
+                        Sportimpex doo je preduzeće osnovano 1990 godine.
                         Sportimpex ima sve što je Vašoj školskoj ili predškolskoj ustanovi potrebno.
                         Sa tradicijom dugom preko 20 godina, i spostvenim proizvodnim programom, postali smo
                         specijalizovani za kompletno unutrašnje i spoljašnje opremanje školskih
-                        i predškolskih ustanova.
+                        i predškolskih ustanova.U ovoj oblasti Sportimpex doo je lider u regionu.
+                        Takođe vršimo izvoz opreme u Bosnu i Hercegovinu, Makedoniju i Crnu Goru.
                         Naša firma poseduje kompletne proizvodne kapacitete za proizvodnju školskog i
                         predškolskog nameštaja kao i proizvodnju sportske opreme i rekvizita za sportske dvorane
                         i igrališta, što nam omogućava da budemo vrlo konkurentni sa cenama i rokovima isporuke.
