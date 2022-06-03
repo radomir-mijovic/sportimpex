@@ -38,33 +38,26 @@ export const kindergarten_pic_urls = [
 
 export const tab_icons = [
     {
-        src: '/icons/cabinets.svg',
         name: "Škole",
         mapping_name: schools_pic_urls
     },
     {
-        src: '/icons/garden.svg',
         name: "Vrtići",
         mapping_name: kindergarten_pic_urls
     },
     {
-        src: '/icons/garden.svg',
         name: "Kancelarije"
     },
     {
-        src: '/icons/garden.svg',
         name: "Kabineti"
     },
     {
-        src: '/icons/garden.svg',
         name: "Dvorišta"
     },
     {
-        src: '/icons/garden.svg',
         name: "Sport"
     },
     {
-        src: '/icons/garden.svg',
         name: "Igrališta"
     },
 ]
