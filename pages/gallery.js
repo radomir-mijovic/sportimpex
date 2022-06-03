@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
 import styled from "styled-components";
-import Image from "next/image";
 import Head from "next/head";
 import {useStyleContext} from "../context/style_context";
+import MainGallery from "../components/Gallery/MainGallery";
 
 const GalleryPage = () => {
     const {setIsActive, setIsScrollY} = useStyleContext()
@@ -24,11 +24,12 @@ const GalleryPage = () => {
                 <title>Galerija</title>
             </Head>
             <PageWrapper>
-                <Image
-                    width={800}
-                    height={500}
-                    src='/images/924.jpg'
-                    alt='coming soon'/>
+                {/*<Image*/}
+                {/*    width={800}*/}
+                {/*    height={500}*/}
+                {/*    src='/images/924.jpg'*/}
+                {/*    alt='coming soon'/>*/}
+                <MainGallery/>
             </PageWrapper>
 
         </>
@@ -36,10 +37,11 @@ const GalleryPage = () => {
 };
 
 const PageWrapper = styled.div`
-  height: 70vh;
+  height: auto;
   width: 100%;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `
 
 export default GalleryPage;
