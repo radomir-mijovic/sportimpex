@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Head from "next/head";
 import {useStyleContext} from "../context/style_context";
 import MainGallery from "../components/Gallery/MainGallery";
+import GalleryTab from "../components/Gallery/GalleryTab";
 
 const GalleryPage = () => {
     const {setIsActive, setIsScrollY} = useStyleContext()
@@ -24,11 +25,7 @@ const GalleryPage = () => {
                 <title>Galerija</title>
             </Head>
             <PageWrapper>
-                {/*<Image*/}
-                {/*    width={800}*/}
-                {/*    height={500}*/}
-                {/*    src='/images/924.jpg'*/}
-                {/*    alt='coming soon'/>*/}
+                <GalleryTab/>
                 <MainGallery/>
             </PageWrapper>
 
@@ -40,6 +37,7 @@ const PageWrapper = styled.div`
   height: auto;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `
