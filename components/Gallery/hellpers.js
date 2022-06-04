@@ -1,39 +1,396 @@
+
+
+export const office_pic_url = [
+    {
+        id: 9,
+        src: "sportimpex/office9_yeayrj"
+    },
+    {
+        id: 10,
+        src: "sportimpex/office10_jycwpe"
+    },
+    {
+        id: 11,
+        src: "sportimpex/office12_lytfos"
+    },
+    {
+        id: 12,
+        src: "sportimpex/office18_nx3snj"
+    },
+    {
+        id: 13,
+        src: "sportimpex/office13_u1ypen"
+    },
+    {
+        id: 14,
+        src: "sportimpex/office8_heccqf"
+    },
+    {
+        id: 15,
+        src: "sportimpex/office7_e1u4cq"
+    },
+    {
+        id: 16,
+        src: "sportimpex/office6_devcss"
+    },
+    {
+        id: 17,
+        src: "sportimpex/office4_hnxbgn"
+    },
+    {
+        id: 18,
+        src: "sportimpex/office5_zwrh8w"
+    },
+    {
+        id: 19,
+        src: "sportimpex/office1_p4vpop"
+    },
+    {
+        id: 20,
+        src: "sportimpex/office3_h8pz0p"
+    },
+    {
+        id: 21,
+        src: "sportimpex/office2_gno8ni"
+    },
+
+]
+
 export const schools_pic_urls = [
     {
-        id: 1,
-        src: "cld-sample-5"
+        id: 22,
+        src: "sportimpex/school/picture76_n0oxca"
     },
     {
-        id: 2,
-        src: "cld-sample-2"
+        id: 23,
+        src: "sportimpex/school/picture75_pd1wup"
     },
     {
-        id: 3,
-        src: "cld-sample-3"
+        id: 24,
+        src: "sportimpex/school/picture72_gmig4t"
     },
     {
-        id: 4,
-        src: "cld-sample-4"
+        id: 25,
+        src: "sportimpex/school/picture65_ne5kbq"
     },
+    {
+        id: 26,
+        src: "sportimpex/school/picture74_ww1m6p"
+    },
+    {
+        id: 27,
+        src: "sportimpex/school/picture73_qqzlzg"
+    },
+    {
+        id: 28,
+        src: "sportimpex/school/picture71_uwwarm"
+    },
+    {
+        id: 29,
+        src: "sportimpex/school/picture70_alii9t"
+    },
+    {
+        id: 30,
+        src: "sportimpex/school/picture69_p9kbbd"
+    },
+    {
+        id: 31,
+        src: "sportimpex/school/picture68_gam4vq"
+    },
+    {
+        id: 32,
+        src: "sportimpex/school/picture62_nriau3"
+    },
+    {
+        id: 33,
+        src: "sportimpex/school/picture67_bbvgis"
+    },
+    {
+        id: 34,
+        src: "sportimpex/school/picture61_omobed"
+    },
+    {
+        id: 35,
+        src: "sportimpex/school/picture66_kejgb0"
+    },
+    {
+        id: 36,
+        src: "sportimpex/school/picture60_evv2yz"
+    },
+    {
+        id: 37,
+        src: "sportimpex/school/picture56_fxfrxt"
+    },
+    {
+        id: 38,
+        src: "sportimpex/school/picture64_x2bquc"
+    },
+    {
+        id: 39,
+        src: "sportimpex/school/picture59_kbeg2d"
+    },
+    {
+        id: 40,
+        src: "sportimpex/school/picture58_kwxp7h"
+    },
+    {
+        id: 41,
+        src: "sportimpex/school/picture55_pog9aw"
+    },
+    {
+        id: 42,
+        src: "sportimpex/school/picture55_pog9aw"
+    },
+    {
+        id: 43,
+        src: "sportimpex/school/picture57_ma4rep"
+    },
+    {
+        id: 44,
+        src: "sportimpex/school/picture54_dczbfi"
+    },
+    {
+        id: 45,
+        src: "sportimpex/school/picture53_boxlyy"
+    },
+    {
+        id: 46,
+        src: "sportimpex/school/picture52_wvnwa0"
+    },
+    {
+        id: 47,
+        src: "sportimpex/school/picture51_lnje0v"
+    },
+    {
+        id: 48,
+        src: "sportimpex/school/picture47_jubw4k"
+    },
+    {
+        id: 49,
+        src: "sportimpex/school/picture50_wdxcfv"
+    },
+    {
+        id: 50,
+        src: "sportimpex/school/picture46_fidfdw"
+    },
+    {
+        id: 51,
+        src: "sportimpex/school/picture37_sy6k54"
+    },
+
 ]
 
 export const kindergarten_pic_urls = [
     {
-        id: 5,
-        src: "cld-sample-4"
+        id: 52,
+        src: "sportimpex/preschool/picture92_s0qw0r"
     },
     {
-        id: 6,
-        src: "cld-sample-2"
+        id: 53,
+        src: "sportimpex/preschool/picture104_wnkuov"
     },
     {
-        id: 7,
-        src: "cld-sample-3"
+        id: 54,
+        src: "sportimpex/preschool/picture102_k3qwmf"
     },
     {
-        id: 8,
-        src: "cld-sample-4"
+        id: 55,
+        src: "sportimpex/preschool/picture22_epsoss"
     },
+    {
+        id: 56,
+        src: "sportimpex/preschool/picture23_m2b8d8"
+    },
+    {
+        id: 57,
+        src: "sportimpex/preschool/picture26_vrhpkv"
+    },
+    {
+        id: 58,
+        src: "sportimpex/preschool/picture28_xawirb"
+    },
+    {
+        id: 59,
+        src: "sportimpex/preschool/picture11_c4ze3d"
+    },
+    {
+        id:60,
+        src: "sportimpex/preschool/picture12_hr7nxi"
+    },
+    {
+        id: 61,
+        src: "sportimpex/preschool/picture8_wg7rg4"
+    },
+    {
+        id: 62,
+        src: "sportimpex/preschool/picture7_zs7lov"
+    },
+    {
+        id: 63,
+        src: "sportimpex/preschool/picture6_dvau7j"
+    },
+    {
+        id: 64,
+        src: "sportimpex/preschool/picture5_rm4jjf"
+    },
+    {
+        id: 65,
+        src: "sportimpex/preschool/picture4_cc3i6c"
+    },
+]
+
+export const cabinets = [
+    {
+        id: 66,
+        src: "sportimpex/cabinets/picture3_wzebr4"
+    },
+    {
+        id: 67,
+        src: "sportimpex/cabinets/picture4_j3gann"
+    },
+    {
+        id: 68,
+        src: "sportimpex/cabinets/picture18_saqjud"
+    },
+    {
+        id: 69,
+        src: "sportimpex/cabinets/picture25_xilnq9"
+    },
+    {
+        id: 70,
+        src: "sportimpex/cabinets/picture24_f0iuby"
+    },
+    {
+        id: 71,
+        src: "sportimpex/cabinets/picture15_o79r8m"
+    },
+    {
+        id: 72,
+        src: "sportimpex/cabinets/picture9_aktmsa"
+    },
+    {
+        id: 73,
+        src: "sportimpex/cabinets/picture8_hdlyic"
+    },
+    {
+        id: 74,
+        src: "sportimpex/cabinets/picture10_fsrjau"
+    },
+    {
+        id: 75,
+        src: "sportimpex/cabinets/picture12_fo39jr"
+    },
+    {
+        id: 76,
+        src: "sportimpex/cabinets/picture13_ik6pff"
+    },
+    {
+        id: 77,
+        src: "sportimpex/cabinets/picture14_bp41ip"
+    },
+]
+
+export const sport_pic_url = [
+    {
+        id: 78,
+        src: "sportimpex/sport/picture29_gt88mo"
+    },
+    {
+        id: 79,
+        src: "sportimpex/sport/picture45_yz7evb"
+    },
+    {
+        id: 80,
+        src: "sportimpex/sport/picture46_yusyzy"
+    },
+    {
+        id: 81,
+        src: "sportimpex/sport/picture47_k5zybx"
+    },
+    {
+        id: 82,
+        src: "sportimpex/sport/picture52_rlzspo"
+    },
+    {
+        id: 83,
+        src: "sportimpex/sport/picture28_mg4cm9"
+    },
+    {
+        id: 84,
+        src: "sportimpex/sport/picture27_nakqnc"
+    },
+    {
+        id: 85,
+        src: "sportimpex/sport/picture19_gw0u3o"
+    },
+    {
+        id: 86,
+        src: "sportimpex/sport/picture12_r7a3ng"
+    },
+    {
+        id: 87,
+        src: "sportimpex/sport/picture5_bgafsx"
+    },
+    {
+        id: 88,
+        src: "sportimpex/sport/picture2_iag7zw"
+    },
+    {
+        id: 89,
+        src: "sportimpex/sport/picture1_rpmvlr"
+    },
+]
+
+export const playground_pic_url = [
+    {
+        id: 90,
+        src: "sportimpex/playground/picture6_agslbx"
+    },
+    {
+        id: 91,
+        src: "sportimpex/playground/picture7_rugywi"
+    },
+    {
+        id: 92,
+        src: "sportimpex/playground/picture13_n7owgc"
+    },
+    {
+        id: 93,
+        src: "sportimpex/playground/picture8_kxhoyk"
+    },
+    {
+        id: 94,
+        src: "sportimpex/playground/picture12_xwczbs"
+    },
+    {
+        id: 95,
+        src: "sportimpex/playground/picture14_euvvf2"
+    },
+    {
+        id: 96,
+        src: "sportimpex/playground/picture11_fd9lui"
+    },
+    {
+        id: 97,
+        src: "sportimpex/playground/picture10_kpofxu"
+    },
+    {
+        id: 98,
+        src: "sportimpex/playground/picture9_xq5drd"
+    },
+    {
+        id: 99,
+        src: "sportimpex/playground/picture24_oaipbg"
+    },
+    {
+        id: 100,
+        src: "sportimpex/playground/picture23_sjlhzx"
+    },
+    {
+        id: 101,
+        src: "sportimpex/playground/picture25_np8ws7"
+    },
+
 ]
 
 export const tab_icons = [
@@ -46,18 +403,23 @@ export const tab_icons = [
         mapping_name: kindergarten_pic_urls
     },
     {
-        name: "Kancelarije"
+        name: "Kancelarije",
+        mapping_name: office_pic_url
     },
     {
-        name: "Kabineti"
+        name: "Kabineti",
+        mapping_name: cabinets
+    },
+    // {
+    //     name: "Dvorišta",
+    //     mapping_name: undefined
+    // },
+    {
+        name: "Sport",
+        mapping_name: sport_pic_url
     },
     {
-        name: "Dvorišta"
-    },
-    {
-        name: "Sport"
-    },
-    {
-        name: "Igrališta"
+        name: "Igrališta",
+        mapping_name: playground_pic_url
     },
 ]

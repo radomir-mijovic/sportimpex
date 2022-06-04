@@ -12,21 +12,42 @@ export const GalleryTabStyled = styled.div`
   justify-content: center;
 
   .icon-box {
-    background: transparent;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     cursor: pointer;
-    border: 1px solid #E2001A;
-    border-radius: 5px;
-    transition: background-color .4s ease-in-out;
+    position: relative;
+
+    ::after {
+      content: "";
+      position: absolute;
+      border: 1px solid black;
+      width: calc(100% - 6px);
+      height: calc(100% - 6px);
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      transform: translate(-3px, -3px);
+    }
+
+    ::before {
+      content: "";
+      position: absolute;
+      border: 1px solid black;
+      width: calc(100% - 6px);
+      height: calc(100% - 6px);
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+      transform: translate(3px, 3px);
+    }
 
     > p {
       margin-bottom: 0;
-      transition: color .4s ease-in-out;
       font-size: 1.6rem;
+      font-weight: 400;
     }
   }
 
@@ -35,21 +56,41 @@ export const GalleryTabStyled = styled.div`
   }
 
   .active-tab {
-    background: #E2001A;
+    border: none;
+    
+    ::after {
+      border: 1px solid #E2001A;
+    }
+
+    ::before {
+      border: 1px solid #E2001A;
+    }
   }
   
-  .active-text {
-    color: white;
-  }
+  //.active-text {
+  //  color: black;
+  //}
 
   @media (max-width: 1200px) {
-    grid-template-columns: repeat(7, 1fr);
+    display: flex;
     margin-top: 12rem;
     margin-bottom: 0;
   }
 
   @media (max-width: 500px) {
-    grid-template-columns: repeat(4, 1fr);
-    row-gap: 1rem;
+    display: flex;
+    overflow-x: auto;
+    //row-gap: 1rem;
+    padding: 0 1rem;
+    justify-content: left;
+    ::-webkit-scrollbar {
+      display: none;
+      height: 0;
+    }
+    
+    .icon-box {
+      min-width: 10rem;
+      height: 4rem;
+    }
   }
 `
