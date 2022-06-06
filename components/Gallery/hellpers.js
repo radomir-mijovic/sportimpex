@@ -58,28 +58,8 @@ export const office_pic_url = [
 
 export const schools_pic_urls = [
     {
-        id: 22,
-        src: "sportimpex/school/picture76_n0oxca"
-    },
-    {
-        id: 23,
-        src: "sportimpex/school/picture75_pd1wup"
-    },
-    {
-        id: 24,
-        src: "sportimpex/school/picture72_gmig4t"
-    },
-    {
         id: 25,
         src: "sportimpex/school/picture65_ne5kbq"
-    },
-    {
-        id: 26,
-        src: "sportimpex/school/picture74_ww1m6p"
-    },
-    {
-        id: 27,
-        src: "sportimpex/school/picture73_qqzlzg"
     },
     {
         id: 28,
@@ -88,10 +68,6 @@ export const schools_pic_urls = [
     {
         id: 29,
         src: "sportimpex/school/picture70_alii9t"
-    },
-    {
-        id: 30,
-        src: "sportimpex/school/picture69_p9kbbd"
     },
     {
         id: 31,
@@ -177,44 +153,96 @@ export const schools_pic_urls = [
         id: 51,
         src: "sportimpex/school/picture37_sy6k54"
     },
+    {
+        id: 22,
+        src: "sportimpex/school/picture76_n0oxca"
+    },
+    {
+        id: 23,
+        src: "sportimpex/school/picture75_pd1wup"
+    },
+    {
+        id: 24,
+        src: "sportimpex/school/picture72_gmig4t"
+    },
+    {
+        id: 26,
+        src: "sportimpex/school/picture74_ww1m6p"
+    },
+    {
+        id: 27,
+        src: "sportimpex/school/picture73_qqzlzg"
+    },
 
 ]
 
 export const kindergarten_pic_urls = [
     {
-        id: 52,
-        src: "sportimpex/preschool/picture92_s0qw0r"
+        id: 102,
+        src: "sportimpex/new_preschool/xcslhh"
     },
     {
-        id: 53,
-        src: "sportimpex/preschool/picture104_wnkuov"
+        id: 103,
+        src: "sportimpex/new_preschool/bmzuw3"
     },
     {
-        id: 54,
-        src: "sportimpex/preschool/picture102_k3qwmf"
+        id: 104,
+        src: "sportimpex/new_preschool/zjuopb"
     },
     {
-        id: 55,
-        src: "sportimpex/preschool/picture22_epsoss"
+        id: 105,
+        src: "sportimpex/new_preschool/zemdjm"
     },
     {
-        id: 56,
-        src: "sportimpex/preschool/picture23_m2b8d8"
+        id: 106,
+        src: "sportimpex/new_preschool/l1580p"
     },
     {
-        id: 57,
-        src: "sportimpex/preschool/picture26_vrhpkv"
+        id: 107,
+        src: "sportimpex/new_preschool/nmy4rj"
     },
     {
-        id: 58,
-        src: "sportimpex/preschool/picture28_xawirb"
+        id: 108,
+        src: "sportimpex/new_preschool/zgzxkp"
     },
     {
-        id: 59,
-        src: "sportimpex/preschool/picture11_c4ze3d"
+        id: 109,
+        src: "sportimpex/new_preschool/huq2nc"
     },
     {
-        id:60,
+        id: 110,
+        src: "sportimpex/new_preschool/tudkrk"
+    },
+    {
+        id: 111,
+        src: "sportimpex/new_preschool/dihvoz"
+    },
+    {
+        id: 112,
+        src: "sportimpex/new_preschool/ccwskj"
+    },
+    {
+        id: 113,
+        src: "sportimpex/new_preschool/ccp42o"
+    },
+    {
+        id: 114,
+        src: "sportimpex/new_preschool/tdxt32"
+    },
+    {
+        id: 115,
+        src: "sportimpex/new_preschool/vrlcuu"
+    },
+    {
+        id: 116,
+        src: "sportimpex/new_preschool/ynjgyi"
+    },
+    {
+        id: 117,
+        src: "sportimpex/new_preschool/i8i3rp"
+    },
+    {
+        id: 60,
         src: "sportimpex/preschool/picture12_hr7nxi"
     },
     {

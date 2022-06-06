@@ -19,11 +19,14 @@ export const GalleryTabStyled = styled.div`
     width: 100%;
     cursor: pointer;
     position: relative;
+    z-index: 4;
 
     ::after {
       content: "";
       position: absolute;
-      border: 1px solid black;
+      border: 2px solid black;
+      //border-left: 2px solid black;
+      //border-right: 2px solid black;
       width: calc(100% - 6px);
       height: calc(100% - 6px);
       left: 0;
@@ -35,7 +38,9 @@ export const GalleryTabStyled = styled.div`
     ::before {
       content: "";
       position: absolute;
-      border: 1px solid black;
+      border: 2px solid black;
+      //border-top: 2px solid black;
+      //border-bottom: 2px solid black;
       width: calc(100% - 6px);
       height: calc(100% - 6px);
       left: 0;
@@ -59,11 +64,16 @@ export const GalleryTabStyled = styled.div`
     border: none;
     
     ::after {
-      border: 1px solid #E2001A;
+      border: 2px solid #E2001A;
+      animation: scale-widthY;
+      animation-duration: .7s;
     }
 
     ::before {
-      border: 1px solid #E2001A;
+      border: 2px solid #E2001A;
+      animation: scale-widthX;
+      animation-duration: .7s;
+      animation-direction: reverse;
     }
   }
   
@@ -91,6 +101,36 @@ export const GalleryTabStyled = styled.div`
     .icon-box {
       min-width: 10rem;
       height: 4rem;
+    }
+  }
+
+  @keyframes scale-widthY {
+    0% {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scaleY(40%);
+      opacity: 0;
+    }
+    100% {
+      transform: scaleY(1);
+      opacity: 1;
+    }
+  }
+
+  @keyframes scale-widthX {
+    0% {
+      transform: scaleX(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scaleX(30%);
+      opacity: 0;
+      }
+    100% {
+      transform: scaleX(1);
+      opacity: 1;
     }
   }
 `
